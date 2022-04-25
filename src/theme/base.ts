@@ -7,6 +7,8 @@ import { NebulaFighterTheme } from './schemes/NebulaFighterTheme';
 import { DarkSpacesTheme } from './schemes/DarkSpacesTheme';
 import { PurpleFlowTheme } from './schemes/PurpleFlowTheme';
 import { GreenFieldsTheme } from './schemes/GreenFieldsTheme';
+import { CshareDiscoTheme } from './schemes/CshareDiscoTheme';
+import { CshareGenoaTheme } from './schemes/CshareGenoaTheme';
 
 export function themeCreator(theme: string): Theme {
   return themeMap[theme];
@@ -259,5 +261,7 @@ const themeMap: { [key: string]: Theme } = {
   PurpleFlowTheme,
   NebulaFighterTheme,
   DarkSpacesTheme,
-  GreenFieldsTheme
+  GreenFieldsTheme,
+  CshareDiscoTheme,
+  CshareGenoaTheme,
 };

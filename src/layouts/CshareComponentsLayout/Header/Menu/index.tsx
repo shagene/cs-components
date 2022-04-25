@@ -208,38 +208,6 @@ function HeaderMenu() {
         >
           {t('Components menu')}
         </Button>
-        {/* <Button
-          ref={ref2}
-          onClick={handleOpen2}
-          endIcon={<KeyboardArrowDownTwoToneIcon />}
-          color="secondary"
-          size="small"
-          sx={{
-            px: 2,
-            backgroundColor: `${theme.colors.secondary.lighter}`,
-            color: `${theme.colors.secondary.dark}`,
-
-            '.MuiSvgIcon-root': {
-              color: `${theme.colors.secondary.dark}`,
-              transition: `${theme.transitions.create(['color'])}`
-            },
-
-            '&:hover': {
-              backgroundColor: `${theme.colors.secondary.main}`,
-              color: `${theme.palette.getContrastText(
-                theme.colors.secondary.main
-              )}`,
-
-              '.MuiSvgIcon-root': {
-                color: `${theme.palette.getContrastText(
-                  theme.colors.secondary.main
-                )}`
-              }
-            }
-          }}
-        >
-          {t('Dashboards')}
-        </Button> */}
       </Box>
       <Popover
         disableScrollLock

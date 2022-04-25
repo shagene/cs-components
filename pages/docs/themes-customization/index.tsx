@@ -15,6 +15,8 @@ function ThemesCustomization() {
   ┃ ┣ 📜NebulaFighterTheme.ts
   ┃ ┣ 📜PureLightTheme.ts
   ┃ ┗ 📜PurpleFlowTheme.ts
+  ┃ ┗ 📜CshareDiscoTheme.ts
+  ┃ ┗ 📜CshareGenoaTheme.ts
   ┣ 📜base.ts
   ┗ 📜ThemeProvider.tsx`;
 

@@ -128,7 +128,7 @@ const ColorSchemeWrapper = styled(Box)(
             background: #F8F8F8;
         }
     }
-    
+
     &.purpleFlow {
         .primary {
             background: #9b52e1;
@@ -139,6 +139,28 @@ const ColorSchemeWrapper = styled(Box)(
         }
         
     }
+
+    &.csharedisco {
+      .primary {
+          background: #93186C;
+      }
+  
+      .secondary {
+          background: #16666f;
+      }
+      
+  }
+
+  &.csharegenoa {
+    .primary {
+        background: #16666f;
+    }
+
+    .secondary {
+        background: #93186C;
+    }
+    
+}
 
     
     &.nebulaFighter {
@@ -258,7 +280,7 @@ const ThemeSettings: FC = () => {
             horizontal: 'right'
           }}
         >
-          <Box p={2}>
+          {/* <Box p={2}>
             <Typography
               sx={{
                 mb: 2,
@@ -346,7 +368,7 @@ const ThemeSettings: FC = () => {
                 Top Navigation
               </MenuItem>
             </Menu>
-          </Box>
+          </Box> */}
           <Divider />
           <Stack
             direction="row"
@@ -366,6 +388,42 @@ const ThemeSettings: FC = () => {
                 Light color schemes
               </Typography>
               <Stack alignItems="center" spacing={2}>
+                <Tooltip placement="left" title="Cshare Disco" arrow>
+                  <ButtonWrapper
+                    className={theme === 'CshareDiscoTheme' ? 'active' : ''}
+                    onClick={() => {
+                      changeTheme('CshareDiscoTheme');
+                    }}
+                  >
+                    {theme === 'CshareDiscoTheme' && (
+                      <CheckSelected>
+                        <CheckTwoToneIcon />
+                      </CheckSelected>
+                    )}
+                    <ColorSchemeWrapper className="colorSchemeWrapper csharedisco">
+                      <Box className="primary" />
+                      <Box className="secondary" />
+                    </ColorSchemeWrapper>
+                  </ButtonWrapper>
+                </Tooltip>
+                <Tooltip placement="left" title="Cshare Genoa" arrow>
+                  <ButtonWrapper
+                    className={theme === 'CshareGenoaTheme' ? 'active' : ''}
+                    onClick={() => {
+                      changeTheme('CshareGenoaTheme');
+                    }}
+                  >
+                    {theme === 'CshareGenoaTheme' && (
+                      <CheckSelected>
+                        <CheckTwoToneIcon />
+                      </CheckSelected>
+                    )}
+                    <ColorSchemeWrapper className="colorSchemeWrapper csharegenoa">
+                      <Box className="primary" />
+                      <Box className="secondary" />
+                    </ColorSchemeWrapper>
+                  </ButtonWrapper>
+                </Tooltip>
                 <Tooltip placement="left" title="Pure Light" arrow>
                   <ButtonWrapper
                     className={theme === 'PureLightTheme' ? 'active' : ''}

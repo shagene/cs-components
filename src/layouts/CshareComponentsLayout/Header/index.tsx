@@ -16,9 +16,8 @@ import { SidebarContext } from 'src/contexts/SidebarContext';
 import CloseTwoToneIcon from '@mui/icons-material/CloseTwoTone';
 
 import HeaderButtons from './Buttons';
-import HeaderUserbox from './Userbox';
-import HeaderSearch from './Search';
 import HeaderMenu from './Menu';
+import Logo from '@/components/LogoSign';
 
 const HeaderWrapper = styled(Box)(
   ({ theme }) => `
@@ -65,12 +64,11 @@ function Header() {
         alignItems="center"
         spacing={2}
       >
-        {/* <HeaderSearch /> */}
-        <HeaderMenu />
+        <Logo />
       </Stack>
       <Box display="flex" alignItems="center">
+        <HeaderMenu />
         <HeaderButtons />
-        <HeaderUserbox />
         <Box
           component="span"
           sx={{
