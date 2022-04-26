@@ -206,7 +206,7 @@ function HeaderMenu() {
             }
           }}
         >
-          {t('Components menu')}
+          {t('Components Menu')}
         </Button>
       </Box>
       <Popover

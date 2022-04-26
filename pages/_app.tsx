@@ -45,7 +45,7 @@ function MyApp(props: MyAppProps) {
   return (
     <CacheProvider value={emotionCache}>
       <Head>
-        <title>Tokyo NextJS Typescript Admin Dashboard</title>
+        <title>Cshare Components</title>
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"

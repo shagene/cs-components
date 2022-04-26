@@ -75,7 +75,7 @@ function ApiRequests() {
   return (
     <>
       <Head>
-        <title>API Requests - Tokyo NextJS Typescript Admin Dashboard</title>
+        <title>API Requests - Cshare Components</title>
       </Head>
       <Container maxWidth={false}>
         <Grid container spacing={4}>

@@ -46,10 +46,14 @@ function Sidebar() {
           position: 'fixed',
           left: 0,
           top: 0,
+          // background:
+          //   theme.palette.mode === 'dark'
+          //     ? alpha(lighten(theme.header.background, 0.1), 0.5)
+          //     : darken(theme.colors.alpha.black[100], 0.5),
           background:
             theme.palette.mode === 'dark'
               ? alpha(lighten(theme.header.background, 0.1), 0.5)
-              : darken(theme.colors.alpha.black[100], 0.5),
+              : darken(theme.colors.alpha.trueWhite[100], 0.5),
           boxShadow:
             theme.palette.mode === 'dark' ? theme.sidebar.boxShadow : 'none'
         }}
@@ -65,14 +69,14 @@ function Sidebar() {
               <Logo />
             </Box>
           </Box>
-          <Divider
+          {/* <Divider
             sx={{
               my: theme.spacing(3),
               mx: theme.spacing(2),
               background: theme.colors.alpha.trueWhite[10]
             }}
           />
-          <SidebarTopSection />
+          <SidebarTopSection /> */}
           <Divider
             sx={{
               my: theme.spacing(3),
@@ -82,12 +86,12 @@ function Sidebar() {
           />
           <SidebarMenu />
         </Scrollbar>
-        <Divider
+        {/* <Divider
           sx={{
             background: theme.colors.alpha.trueWhite[10]
           }}
         />
-        <SidebarFooter />
+        <SidebarFooter /> */}
       </SidebarWrapper>
       <Drawer
         sx={{
@@ -104,7 +108,7 @@ function Sidebar() {
             background:
               theme.palette.mode === 'dark'
                 ? theme.colors.alpha.white[100]
-                : darken(theme.colors.alpha.black[100], 0.5)
+                : darken(theme.colors.alpha.trueWhite[100], 0.5)
           }}
         >
           <Scrollbar>
@@ -118,14 +122,14 @@ function Sidebar() {
                 <Logo />
               </Box>
             </Box>
-            <Divider
+            {/* <Divider
               sx={{
                 my: theme.spacing(3),
                 mx: theme.spacing(2),
                 background: theme.colors.alpha.trueWhite[10]
               }}
-            />
-            <SidebarTopSection />
+            /> */}
+            {/* <SidebarTopSection /> */}
             <Divider
               sx={{
                 my: theme.spacing(3),

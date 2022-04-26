@@ -1,11 +1,11 @@
 {
-  "name": "tokyo-nextjs-admin-dashboard",
-  "version": "3.0.0",
-  "title": "Tokyo NextJS Typescript Admin Dashboard",
-  "description": "Production-ready updated admin dashboard powered by React and MUI (Material-UI) built on NextJS features hundreds of components and examples that will help you build faster and better apps.",
+  "name": "cshare-components",
+  "version": "1.0.0",
+  "title": "Cshare Components",
+  "description": "Cshare components library",
   "author": {
-    "name": "BloomUI.com",
-    "url": "https://bloomui.com"
+    "name": "Steven Hagene",
+    "url": "https://stevenh.com"
   },
   "private": true,
   "dependencies": {

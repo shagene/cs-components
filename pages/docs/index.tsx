@@ -10,7 +10,7 @@ function Introduction() {
   return (
     <>
       <Head>
-        <title>Introduction - Tokyo NextJS Typescript Admin Dashboard</title>
+        <title>CShare Components</title>
       </Head>
       <Container maxWidth={false}>
         <Grid container spacing={3}>
