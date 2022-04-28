@@ -1,10 +1,10 @@
 {
-  "theme_color": "#1975ff",
-  "background_color": "#f2f5f9",
+  "theme_color": "#93186C",
+  "background_color": "#fefefe",
   "display": "standalone",
   "start_url": ".",
-  "short_name": "Tokyo",
-  "name": "Tokyo NextJS Typescript Admin Dashboard",
+  "short_name": "Cshare",
+  "name": "Cshare Component Library",
   "icons": [
     {
       "src": "/icon-192x192.png",

@@ -238,11 +238,11 @@ const ThemeSettings: FC = () => {
 
   useEffect(() => {
     const curThemeName =
-      window.localStorage.getItem('appTheme') || 'PureLightTheme';
+      window.localStorage.getItem('appTheme') || 'CShareDicsoTheme';
     setTheme(curThemeName);
   }, []);
 
-  const [theme, setTheme] = useState('PureLightTheme');
+  const [theme, setTheme] = useState('CShareDicsoTheme');
 
   const changeTheme = (theme): void => {
     setTheme(theme);
@@ -442,7 +442,7 @@ const ThemeSettings: FC = () => {
                     </ColorSchemeWrapper>
                   </ButtonWrapper>
                 </Tooltip>
-                <Tooltip placement="left" title="Grey Goose" arrow>
+                {/* <Tooltip placement="left" title="Grey Goose" arrow>
                   <ButtonWrapper
                     className={theme === 'GreyGooseTheme' ? 'active' : ''}
                     onClick={() => {
@@ -477,7 +477,7 @@ const ThemeSettings: FC = () => {
                       <Box className="secondary" />
                     </ColorSchemeWrapper>
                   </ButtonWrapper>
-                </Tooltip>
+                </Tooltip> */}
               </Stack>
             </ThemeToggleWrapper>
             <ThemeToggleWrapper>

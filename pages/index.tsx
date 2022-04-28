@@ -25,7 +25,6 @@ import Head from 'next/head';
 import { useTranslation } from 'react-i18next';
 import Logo from 'src/components/LogoSign';
 import Hero from 'src/content/Overview/Hero';
-import Highlights from 'src/content/Overview/Highlights';
 import LanguageSwitcher from 'src/layouts/BoxedSidebarLayout/Header/Buttons/LanguageSwitcher';
 import Footer from 'src/components/CshareComponents/Footer';
 import ThemeSettings from '@/components/ThemeSettings';
@@ -47,34 +46,6 @@ const OverviewWrapper = styled(Box)(
     background: ${theme.palette.common.white};
     flex: 1;
     overflow-x: hidden;
-`
-);
-
-const LabelWrapper = styled(Box)(
-  ({ theme }) => `
-  font-size: ${theme.typography.pxToRem(10)};
-  font-weight: bold;
-  text-transform: uppercase;
-  border-radius: ${theme.general.borderRadiusSm};
-  padding: ${theme.spacing(0.5, 1, 0.4)};
-`
-);
-
-const CardActionAreaWrapper = styled(CardActionArea)(
-  ({ theme }) => `
-      .MuiTouchRipple-root {
-        opacity: .2;
-      }
-
-      .MuiCardActionArea-focusHighlight {
-        background: ${theme.colors.primary.main};
-      }
-
-      &:hover {
-        .MuiCardActionArea-focusHighlight {
-          opacity: .05;
-        }
-      }
 `
 );
 
@@ -156,16 +127,6 @@ const MenuListWrapperError = styled(MenuList)(
 `
 );
 
-const DotLegend = styled('span')(
-  ({ theme }) => `
-    border-radius: 22px;
-    width: ${theme.spacing(1.4)};
-    height: ${theme.spacing(1.45)};
-    display: inline-block;
-    border: ${theme.colors.alpha.white[100]} solid 2px;
-`
-);
-
 function Overview() {
   const { t }: { t: any } = useTranslation();
   const theme = useTheme();
@@ -198,14 +159,6 @@ function Overview() {
               <Box />
               <Box>
                 <LanguageSwitcher />
-                {/* <Button
-                  component={Link}
-                  href="/cs-components/buttons"
-                  variant="contained"
-                  sx={{ ml: 2 }}
-                >
-                  {t('Buttons')}
-                </Button> */}
                 <Box
                   sx={{
                     display: { xs: 'none', md: 'inline-flex' }
@@ -301,13 +254,20 @@ function Overview() {
                     spacing={0}
                   >
                     <MenuListWrapperSecondary disablePadding>
+                      <Typography
+                        variant="h5"
+                        textAlign={'start'}
+                        sx={{ pb: 2 }}
+                      >
+                        Content Containers
+                      </Typography>
                       <MenuItem selected>
                         <Link href="/cs-components/buttons">
                           <ListItemText
                             primaryTypographyProps={{
                               variant: 'h5'
                             }}
-                            primary={t('Buttons')}
+                            primary={t('Accordion')}
                           />
                         </Link>
                       </MenuItem>
@@ -317,7 +277,7 @@ function Overview() {
                             primaryTypographyProps={{
                               variant: 'h5'
                             }}
-                            primary={t('Sliders')}
+                            primary={t('Alert')}
                           />
                         </Link>
                       </MenuItem>
@@ -327,7 +287,7 @@ function Overview() {
                             primaryTypographyProps={{
                               variant: 'h5'
                             }}
-                            primary={t('Buttons')}
+                            primary={t('Backdrop')}
                           />
                         </Link>
                       </MenuItem>
@@ -337,19 +297,116 @@ function Overview() {
                             primaryTypographyProps={{
                               variant: 'h5'
                             }}
-                            primary={t('Sliders')}
+                            primary={t('Banner')}
+                          />
+                        </Link>
+                      </MenuItem>
+                      <MenuItem disabled>
+                        <Link href="/cs-components/sliders">
+                          <ListItemText
+                            primaryTypographyProps={{
+                              variant: 'h5'
+                            }}
+                            primary={t('Card')}
+                          />
+                        </Link>
+                      </MenuItem>
+                      <MenuItem disabled>
+                        <Link href="/cs-components/sliders">
+                          <ListItemText
+                            primaryTypographyProps={{
+                              variant: 'h5'
+                            }}
+                            primary={t('Carousel')}
+                          />
+                        </Link>
+                      </MenuItem>
+                      <MenuItem disabled>
+                        <Link href="/cs-components/sliders">
+                          <ListItemText
+                            primaryTypographyProps={{
+                              variant: 'h5'
+                            }}
+                            primary={t('Dialog')}
+                          />
+                        </Link>
+                      </MenuItem>
+                      <MenuItem disabled>
+                        <Link href="/cs-components/sliders">
+                          <ListItemText
+                            primaryTypographyProps={{
+                              variant: 'h5'
+                            }}
+                            primary={t('List')}
+                          />
+                        </Link>
+                      </MenuItem>
+                      <MenuItem disabled>
+                        <Link href="/cs-components/sliders">
+                          <ListItemText
+                            primaryTypographyProps={{
+                              variant: 'h5'
+                            }}
+                            primary={t('Image List')}
+                          />
+                        </Link>
+                      </MenuItem>
+                      <MenuItem disabled>
+                        <Link href="/cs-components/sliders">
+                          <ListItemText
+                            primaryTypographyProps={{
+                              variant: 'h5'
+                            }}
+                            primary={t('Skeleton Screen')}
+                          />
+                        </Link>
+                      </MenuItem>
+                      <MenuItem disabled>
+                        <Link href="/cs-components/sliders">
+                          <ListItemText
+                            primaryTypographyProps={{
+                              variant: 'h5'
+                            }}
+                            primary={t('Snackbar')}
+                          />
+                        </Link>
+                      </MenuItem>
+                      <MenuItem disabled>
+                        <Link href="/cs-components/sliders">
+                          <ListItemText
+                            primaryTypographyProps={{
+                              variant: 'h5'
+                            }}
+                            primary={t('Table')}
+                          />
+                        </Link>
+                      </MenuItem>
+                      <MenuItem disabled>
+                        <Link href="/cs-components/sliders">
+                          <ListItemText
+                            primaryTypographyProps={{
+                              variant: 'h5'
+                            }}
+                            primary={t('Tooltip')}
                           />
                         </Link>
                       </MenuItem>
                     </MenuListWrapperSecondary>
                     <MenuListWrapperSuccess disablePadding>
+                      <Typography
+                        variant="h5"
+                        textAlign={'start'}
+                        sx={{ pb: 2 }}
+                      >
+                        Content Visualization
+                      </Typography>
                       <MenuItem>
                         <Link href="/cs-components/buttons">
                           <ListItemText
                             primaryTypographyProps={{
                               variant: 'h5'
                             }}
-                            primary={t('Buttons')}
+                            primary={t('Avatars')}
                           />
                         </Link>
                       </MenuItem>
@@ -359,7 +416,7 @@ function Overview() {
                             primaryTypographyProps={{
                               variant: 'h5'
                             }}
-                            primary={t('Sliders')}
+                            primary={t('Badges')}
                           />
                         </Link>
                       </MenuItem>
@@ -369,7 +426,7 @@ function Overview() {
                             primaryTypographyProps={{
                               variant: 'h5'
                             }}
-                            primary={t('Buttons')}
+                            primary={t('Loading Indicators')}
                           />
                         </Link>
                       </MenuItem>
@@ -379,19 +436,36 @@ function Overview() {
                             primaryTypographyProps={{
                               variant: 'h5'
                             }}
-                            primary={t('Sliders')}
+                            primary={t('Progress Indicators')}
+                          />
+                        </Link>
+                      </MenuItem>
+                      <MenuItem disabled>
+                        <Link href="/cs-components/sliders">
+                          <ListItemText
+                            primaryTypographyProps={{
+                              variant: 'h5'
+                            }}
+                            primary={t('Tags')}
                           />
                         </Link>
                       </MenuItem>
                     </MenuListWrapperSuccess>
                     <MenuListWrapperError disablePadding>
+                      <Typography
+                        variant="h5"
+                        textAlign={'start'}
+                        sx={{ pb: 2 }}
+                      >
+                        Controls
+                      </Typography>
                       <MenuItem>
                         <Link href="/cs-components/buttons">
                           <ListItemText
                             primaryTypographyProps={{
                               variant: 'h5'
                             }}
-                            primary={t('Buttons')}
+                            primary={t('Button')}
                           />
                         </Link>
                       </MenuItem>
@@ -401,7 +475,7 @@ function Overview() {
                             primaryTypographyProps={{
                               variant: 'h5'
                             }}
-                            primary={t('Sliders')}
+                            primary={t('Button Group')}
                           />
                         </Link>
                       </MenuItem>
@@ -411,7 +485,7 @@ function Overview() {
                             primaryTypographyProps={{
                               variant: 'h5'
                             }}
-                            primary={t('Buttons')}
+                            primary={t('Button Toggle')}
                           />
                         </Link>
                       </MenuItem>
@@ -421,7 +495,216 @@ function Overview() {
                             primaryTypographyProps={{
                               variant: 'h5'
                             }}
-                            primary={t('Sliders')}
+                            primary={t('Checkbox')}
+                          />
+                        </Link>
+                      </MenuItem>
+                      <MenuItem disabled>
+                        <Link href="/cs-components/sliders">
+                          <ListItemText
+                            primaryTypographyProps={{
+                              variant: 'h5'
+                            }}
+                            primary={t('Chip')}
+                          />
+                        </Link>
+                      </MenuItem>
+                      <MenuItem disabled>
+                        <Link href="/cs-components/sliders">
+                          <ListItemText
+                            primaryTypographyProps={{
+                              variant: 'h5'
+                            }}
+                            primary={t('Date Picker')}
+                          />
+                        </Link>
+                      </MenuItem>
+                      <MenuItem disabled>
+                        <Link href="/cs-components/sliders">
+                          <ListItemText
+                            primaryTypographyProps={{
+                              variant: 'h5'
+                            }}
+                            primary={t('Dropdown')}
+                          />
+                        </Link>
+                      </MenuItem>
+                      <MenuItem disabled>
+                        <Link href="/cs-components/sliders">
+                          <ListItemText
+                            primaryTypographyProps={{
+                              variant: 'h5'
+                            }}
+                            primary={t('Floating Action Button')}
+                          />
+                        </Link>
+                      </MenuItem>
+                      <MenuItem disabled>
+                        <Link href="/cs-components/sliders">
+                          <ListItemText
+                            primaryTypographyProps={{
+                              variant: 'h5'
+                            }}
+                            primary={t('Link')}
+                          />
+                        </Link>
+                      </MenuItem>
+                      <MenuItem disabled>
+                        <Link href="/cs-components/sliders">
+                          <ListItemText
+                            primaryTypographyProps={{
+                              variant: 'h5'
+                            }}
+                            primary={t('Paginator')}
+                          />
+                        </Link>
+                      </MenuItem>
+                      <MenuItem disabled>
+                        <Link href="/cs-components/sliders">
+                          <ListItemText
+                            primaryTypographyProps={{
+                              variant: 'h5'
+                            }}
+                            primary={t('Radio Button')}
+                          />
+                        </Link>
+                      </MenuItem>
+                      <MenuItem disabled>
+                        <Link href="/cs-components/sliders">
+                          <ListItemText
+                            primaryTypographyProps={{
+                              variant: 'h5'
+                            }}
+                            primary={t('Search')}
+                          />
+                        </Link>
+                      </MenuItem>
+                      <MenuItem disabled>
+                        <Link href="/cs-components/sliders">
+                          <ListItemText
+                            primaryTypographyProps={{
+                              variant: 'h5'
+                            }}
+                            primary={t('Slider')}
+                          />
+                        </Link>
+                      </MenuItem>
+                      <MenuItem disabled>
+                        <Link href="/cs-components/sliders">
+                          <ListItemText
+                            primaryTypographyProps={{
+                              variant: 'h5'
+                            }}
+                            primary={t('Text Area')}
+                          />
+                        </Link>
+                      </MenuItem>
+                      <MenuItem disabled>
+                        <Link href="/cs-components/sliders">
+                          <ListItemText
+                            primaryTypographyProps={{
+                              variant: 'h5'
+                            }}
+                            primary={t('Text Field')}
+                          />
+                        </Link>
+                      </MenuItem>
+                      <MenuItem disabled>
+                        <Link href="/cs-components/sliders">
+                          <ListItemText
+                            primaryTypographyProps={{
+                              variant: 'h5'
+                            }}
+                            primary={t('Toggle / Switch')}
+                          />
+                        </Link>
+                      </MenuItem>
+                    </MenuListWrapperError>
+                    <MenuListWrapperError disablePadding>
+                      <Typography
+                        variant="h5"
+                        textAlign={'start'}
+                        sx={{ pb: 2 }}
+                      >
+                        Navigation Controls
+                      </Typography>
+                      <MenuItem>
+                        <Link href="/cs-components/buttons">
+                          <ListItemText
+                            primaryTypographyProps={{
+                              variant: 'h5'
+                            }}
+                            primary={t('App bar')}
+                          />
+                        </Link>
+                      </MenuItem>
+                      <MenuItem>
+                        <Link href="/cs-components/sliders">
+                          <ListItemText
+                            primaryTypographyProps={{
+                              variant: 'h5'
+                            }}
+                            primary={t('Menus')}
+                          />
+                        </Link>
+                      </MenuItem>
+                      <MenuItem disabled>
+                        <Link href="/cs-components/buttons">
+                          <ListItemText
+                            primaryTypographyProps={{
+                              variant: 'h5'
+                            }}
+                            primary={t('Navigation Drawer')}
+                          />
+                        </Link>
+                      </MenuItem>
+                      <MenuItem disabled>
+                        <Link href="/cs-components/sliders">
+                          <ListItemText
+                            primaryTypographyProps={{
+                              variant: 'h5'
+                            }}
+                            primary={t('Navigation Rail')}
+                          />
+                        </Link>
+                      </MenuItem>
+                      <MenuItem disabled>
+                        <Link href="/cs-components/sliders">
+                          <ListItemText
+                            primaryTypographyProps={{
+                              variant: 'h5'
+                            }}
+                            primary={t('Section Index')}
+                          />
+                        </Link>
+                      </MenuItem>
+                      <MenuItem>
+                        <Link href="/cs-components/sliders">
+                          <ListItemText
+                            primaryTypographyProps={{
+                              variant: 'h5'
+                            }}
+                            primary={t('Tabs')}
+                          />
+                        </Link>
+                      </MenuItem>
+                      <MenuItem>
+                        <Link href="/cs-components/sliders">
+                          <ListItemText
+                            primaryTypographyProps={{
+                              variant: 'h5'
+                            }}
+                            primary={t('Toolbar')}
+                          />
+                        </Link>
+                      </MenuItem>
+                      <MenuItem>
+                        <Link href="/cs-components/sliders">
+                          <ListItemText
+                            primaryTypographyProps={{
+                              variant: 'h5'
+                            }}
+                            primary={t('Stepper / Wizard')}
                           />
                         </Link>
                       </MenuItem>
@@ -446,7 +729,6 @@ function Overview() {
       </HeaderWrapper>
       <Hero />
       <ThemeSettings />
-      {/* <Highlights /> */}
       <Footer />
     </OverviewWrapper>
   );
