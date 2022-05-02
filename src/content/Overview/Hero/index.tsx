@@ -258,7 +258,7 @@ optio, eaque rerum!`)}
             <Link href="/cs-components/button">
               <ImgWrapper>
                 <img
-                  alt="Tokyo"
+                  alt="Cshare"
                   src="/7169546693_d26e063a-45db-4e3a-8ea6-d1b59180dec4.png"
                 />
               </ImgWrapper>

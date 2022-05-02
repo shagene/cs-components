@@ -3,17 +3,17 @@ import { Grid } from '@mui/material';
 import PageHeader from 'src/content/CshareHeader/PageHeader';
 import Footer from 'src/components/CshareComponents/Footer';
 import PageTitleWrapper from 'src/components/PageTitleWrapper';
-import BasicButtonGroup from '@/components/CshareComponents/ButtonGroup/BasicButtonGroup';
-import ButtonVariant from '@/components/CshareComponents/ButtonGroup/ButtonVariant';
-import SizeAndColor from '@/components/CshareComponents/ButtonGroup/SizeAndColor';
-import SplitButton from '@/components/CshareComponents/ButtonGroup/SplitButton';
-import VerticleGroup from '@/components/CshareComponents/ButtonGroup/VerticleGroup';
+import BasicButtonGroup from '@/components/CshareComponents/Controls/ButtonGroup/BasicButtonGroup';
+import ButtonVariant from '@/components/CshareComponents/Controls/ButtonGroup/ButtonVariant';
+import SizeAndColor from '@/components/CshareComponents/Controls/ButtonGroup/SizeAndColor';
+import SplitButton from '@/components/CshareComponents/Controls/ButtonGroup/SplitButton';
+import VerticleGroup from '@/components/CshareComponents/Controls/ButtonGroup/VerticleGroup';
 
-function ButtonGroupPageContent() {
+function ToggleButtonPageContent() {
   return (
     <>
       <PageTitleWrapper>
-        <PageHeader title="Button Group" />
+        <PageHeader title="Toggle Button" />
       </PageTitleWrapper>
       <Grid
         sx={{ px: 4 }}
@@ -36,4 +36,4 @@ function ButtonGroupPageContent() {
   );
 }
 
-export default ButtonGroupPageContent;
+export default ToggleButtonPageContent;

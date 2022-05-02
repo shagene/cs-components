@@ -4,11 +4,11 @@ import PageHeader from 'src/content/CshareHeader/PageHeader';
 import Footer from 'src/components/CshareComponents/Footer';
 import PageTitleWrapper from 'src/components/PageTitleWrapper';
 
-import ContainedButtons from '@/components/CshareComponents/Button/ContainedButtons';
-import OutlinedButtons from '@/components/CshareComponents/Button/OutlinedButtons';
-import TextButtons from '@/components/CshareComponents/Button/TextButtons';
-import IconButtons from '@/components/CshareComponents/Button/IconButtons';
-import LoadingButtons from '@/components/CshareComponents/Button/LoadingButtons';
+import ContainedButtons from '@/components/CshareComponents/Controls/Button/ContainedButtons';
+import OutlinedButtons from '@/components/CshareComponents/Controls/Button/OutlinedButtons';
+import TextButtons from '@/components/CshareComponents/Controls/Button/TextButtons';
+import IconButtons from '@/components/CshareComponents/Controls/Button/IconButtons';
+import LoadingButtons from '@/components/CshareComponents/Controls/Button/LoadingButtons';
 
 function ButtonPageContent() {
   return (

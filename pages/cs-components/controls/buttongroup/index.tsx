@@ -2,7 +2,7 @@ import Head from 'next/head';
 
 import CshareComponentsLayout from 'src/layouts/CshareComponentsLayout';
 
-import ButtonGroupPageContent from 'src/content/CshareComponentsPages/buttongroup';
+import ButtonGroupPageContent from '@/content/CshareComponentsPages/controls/buttongroup';
 
 function ButtonGroupPage() {
   return (

@@ -2,7 +2,7 @@ import Head from 'next/head';
 
 import CshareComponentsLayout from 'src/layouts/CshareComponentsLayout';
 
-import ButtonPageContent from 'src/content/CshareComponentsPages/button';
+import ButtonPageContent from '@/content/CshareComponentsPages/controls/button';
 
 function ButtonPage() {
   return (
