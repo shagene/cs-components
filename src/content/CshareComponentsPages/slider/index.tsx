@@ -3,12 +3,12 @@ import PageHeader from 'src/content/CshareHeader/PageHeader';
 import Footer from 'src/components/CshareComponents/Footer';
 import PageTitleWrapper from 'src/components/PageTitleWrapper';
 import React from 'react';
-import ContinuousSlider from '@/components/CshareComponents/Sliders/ContinuousSliders';
-import DiscreteSliders from '@/components/CshareComponents/Sliders/DiscreteSliders';
-import RangeSliders from '@/components/CshareComponents/Sliders/RangeSliders';
-import VerticleSliders from '@/components/CshareComponents/Sliders/VerticleSliders';
+import ContinuousSlider from '@/components/CshareComponents/Slider/ContinuousSlider';
+import DiscreteSliders from '@/components/CshareComponents/Slider/DiscreteSlider';
+import RangeSliders from '@/components/CshareComponents/Slider/RangeSlider';
+import VerticleSlider from '@/components/CshareComponents/Slider/VerticleSlider';
 
-function SlidersPageContent() {
+function SliderPageContent() {
   return (
     <>
       <PageTitleWrapper>
@@ -26,7 +26,7 @@ function SlidersPageContent() {
           <ContinuousSlider />
           <DiscreteSliders />
           <RangeSliders />
-          <VerticleSliders />
+          <VerticleSlider />
         </Grid>
       </Grid>
       <Footer />
@@ -34,4 +34,4 @@ function SlidersPageContent() {
   );
 }
 
-export default SlidersPageContent;
+export default SliderPageContent;

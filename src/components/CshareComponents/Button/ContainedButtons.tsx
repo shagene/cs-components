@@ -3,11 +3,11 @@ import Typography from '@mui/material/Typography';
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 
-export default function OutlinedButtons() {
+export default function ContainedButtons() {
   return (
     <Box sx={{ pb: 5, justifyContent: 'center', textAlign: 'center' }}>
       <Typography variant="h3" component="h2" sx={{ pb: 2 }}>
-        Outlined Buttons
+        Contained Button
       </Typography>
       <Stack
         direction="row"
@@ -15,11 +15,11 @@ export default function OutlinedButtons() {
         alignItems="center"
         spacing={2}
       >
-        <Button variant="outlined">Primary</Button>
-        <Button variant="outlined" disabled>
+        <Button variant="contained">Contained</Button>
+        <Button variant="contained" disabled>
           Disabled
         </Button>
-        <Button variant="outlined" href="#outlined-buttons">
+        <Button variant="contained" href="#contained-buttons">
           Link
         </Button>
       </Stack>

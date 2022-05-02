@@ -27,7 +27,7 @@ const marks = [
   }
 ];
 
-export default function VerticleSliders() {
+export default function VerticleSlider() {
   return (
     <Box
       sx={{
@@ -37,7 +37,7 @@ export default function VerticleSliders() {
       }}
     >
       <Typography variant="h3" component="h2" sx={{ pb: 2 }}>
-        Verticle Sliders
+        Verticle Slider
       </Typography>
       <Stack
         spacing={2}

@@ -2,7 +2,7 @@ import Head from 'next/head';
 
 import CshareComponentsLayout from 'src/layouts/CshareComponentsLayout';
 
-import SlidersPageContent from 'src/content/CshareComponentsPages/sliders';
+import SlidersPageContent from 'src/content/CshareComponentsPages/slider';
 
 function SlidersPage() {
   return (

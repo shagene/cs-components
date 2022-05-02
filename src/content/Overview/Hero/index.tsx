@@ -255,7 +255,7 @@ optio, eaque rerum!`)}
         </Grid>
         <Grid item md={6}>
           <BoxContent>
-            <Link href="/cs-components/buttons">
+            <Link href="/cs-components/button">
               <ImgWrapper>
                 <img
                   alt="Tokyo"

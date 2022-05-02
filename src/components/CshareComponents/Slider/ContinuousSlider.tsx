@@ -2,17 +2,15 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 import Stack from '@mui/material/Stack';
 import Slider from '@mui/material/Slider';
+import VolumeDown from '@mui/icons-material/VolumeDown';
+import VolumeUp from '@mui/icons-material/VolumeUp';
 import Typography from '@mui/material/Typography';
 
-function valuetext(value: number) {
-  return `${value}°C`;
-}
-
-export default function RangeSliders() {
-  const [value, setValue] = React.useState<number[]>([20, 37]);
+export default function ContinuousSlider() {
+  const [value, setValue] = React.useState<number>(75);
 
   const handleChange = (event: Event, newValue: number | number[]) => {
-    setValue(newValue as number[]);
+    setValue(newValue as number);
   };
 
   return (
@@ -24,7 +22,7 @@ export default function RangeSliders() {
       }}
     >
       <Typography variant="h3" component="h2" sx={{ pb: 2 }}>
-        Range Sliders
+        Continuous Slider
       </Typography>
       <Stack
         spacing={2}
@@ -32,15 +30,21 @@ export default function RangeSliders() {
         justifyContent="center"
         alignItems="center"
       >
+        <VolumeDown />
         <Slider
-          getAriaLabel={() => 'Temperature range'}
+          aria-label="Volume"
           value={value}
           onChange={handleChange}
-          valueLabelDisplay="auto"
-          getAriaValueText={valuetext}
           sx={{ width: 300 }}
         />
+        <VolumeUp />
       </Stack>
+      <Slider
+        disabled
+        defaultValue={30}
+        aria-label="Disabled slider"
+        sx={{ width: 300 }}
+      />
     </Box>
   );
 }

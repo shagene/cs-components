@@ -2,23 +2,23 @@ import Head from 'next/head';
 
 import CshareComponentsLayout from 'src/layouts/CshareComponentsLayout';
 
-import ButtonsPageContent from 'src/content/CshareComponentsPages/buttons';
+import ButtonPageContent from 'src/content/CshareComponentsPages/button';
 
-function ButtonsPage() {
+function ButtonPage() {
   return (
     <>
       <Head>
-        <title>Cshare Components - Buttons</title>
+        <title>Cshare Components - Button</title>
       </Head>
-      <ButtonsPageContent />
+      <ButtonPageContent />
     </>
   );
 }
 
-ButtonsPage.getLayout = (page) => (
+ButtonPage.getLayout = (page) => (
   //   <Authenticated>
   <CshareComponentsLayout>{page}</CshareComponentsLayout>
   //   </Authenticated>
 );
 
-export default ButtonsPage;
+export default ButtonPage;

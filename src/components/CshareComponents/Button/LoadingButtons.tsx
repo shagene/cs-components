@@ -16,7 +16,7 @@ export default function LoadingButtons() {
   return (
     <Box sx={{ pb: 5, justifyContent: 'center', textAlign: 'center' }}>
       <Typography variant="h3" component="h2" sx={{ pb: 2 }}>
-        Loading Buttons
+        Loading Button
       </Typography>
       <Box>
         <FormControlLabel
