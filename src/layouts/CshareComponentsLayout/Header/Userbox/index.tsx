@@ -1,5 +1,4 @@
 import { useRef, useState } from 'react';
-import { useAuth } from 'src/hooks/useAuth';
 import { useRouter } from 'next/router';
 
 import {
@@ -20,8 +19,6 @@ import {
 import { useTranslation } from 'react-i18next';
 import LockOpenTwoToneIcon from '@mui/icons-material/LockOpenTwoTone';
 import ChevronRightTwoToneIcon from '@mui/icons-material/ChevronRightTwoTone';
-import { Chart } from 'src/components/Chart';
-import type { ApexOptions } from 'apexcharts';
 import Text from 'src/components/Text';
 import MonetizationOnTwoToneIcon from '@mui/icons-material/MonetizationOnTwoTone';
 
@@ -46,14 +43,6 @@ const UserBoxButton = styled(IconButton)(
   &:hover {
     background: ${theme.colors.primary.main};
   }
-`
-);
-
-const UserAvatar = styled(Avatar)(
-  ({ theme }) => `
-        height: 90%;
-        width: 90%;
-        border-radius: ${theme.general.borderRadiusLg};
 `
 );
 
@@ -116,8 +105,6 @@ function HeaderUserbox() {
   const theme = useTheme();
   const router = useRouter();
 
-  const { logout } = useAuth();
-
   const user = {
     avatar: '/static/images/avatars/1.jpg',
     name: 'Rachael Simons',
@@ -138,80 +125,11 @@ function HeaderUserbox() {
   const handleLogout = async (): Promise<void> => {
     try {
       handleClose();
-      await logout();
       router.push('/');
     } catch (err) {
       console.error(err);
     }
   };
-
-  const Box1Options: ApexOptions = {
-    chart: {
-      background: 'transparent',
-      toolbar: {
-        show: false
-      },
-      sparkline: {
-        enabled: true
-      },
-      zoom: {
-        enabled: false
-      }
-    },
-    labels: [
-      'Monday',
-      'Tuesday',
-      'Wednesday',
-      'Thursday',
-      'Friday',
-      'Saturday',
-      'Sunday',
-      'Last Week',
-      'Last Month',
-      'Last Year',
-      'Last Decade'
-    ],
-    theme: {
-      mode: theme.palette.mode === 'dark' ? 'light' : 'dark'
-    },
-    stroke: {
-      colors: [theme.colors.error.main],
-      curve: 'smooth',
-      width: 3
-    },
-    grid: {
-      padding: {
-        right: 5,
-        left: 5,
-        bottom: 5
-      }
-    },
-    tooltip: {
-      fixed: {
-        enabled: true
-      },
-      x: {
-        show: false
-      },
-      y: {
-        title: {
-          formatter: function () {
-            return 'Orders:';
-          }
-        }
-      },
-      marker: {
-        show: true
-      }
-    },
-    colors: [theme.colors.error.main]
-  };
-  const Box1Data = [
-    {
-      name: 'Revenue',
-      data: [465, 546, 234, 576, 554, 338, 427, 348, 586, 254, 348]
-    }
-  ];
 
   return (
     <>

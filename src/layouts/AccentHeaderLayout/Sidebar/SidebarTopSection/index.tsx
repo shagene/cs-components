@@ -1,5 +1,4 @@
 import { useRef, useState } from 'react';
-import { useAuth } from 'src/hooks/useAuth';
 import { useRouter } from 'next/router';
 
 import {
@@ -76,7 +75,6 @@ const UserBoxDescription = styled(Typography)(
 function SidebarTopSection() {
   const { t }: { t: any } = useTranslation();
 
-  const { logout } = useAuth();
   const router = useRouter();
 
   const ref = useRef<any>(null);
@@ -93,7 +91,6 @@ function SidebarTopSection() {
   const handleLogout = async (): Promise<void> => {
     try {
       handleClose();
-      await logout();
       router.push('/');
     } catch (err) {
       console.error(err);

@@ -3,13 +3,14 @@ import PageHeader from 'src/content/CshareHeader/PageHeader';
 import Footer from 'src/components/CshareComponents/Footer';
 import PageTitleWrapper from 'src/components/PageTitleWrapper';
 import React from 'react';
-import Playground from '@/components/CshareComponents/Autocomplete/Playground';
+import BasicLink from '@/components/CshareComponents/Controls/Link/BasicLink';
+import UnderlineLink from '@/components/CshareComponents/Controls/Link/UnderlineLink';
 
-function AutocompletePageContent() {
+function LinkPageContent() {
   return (
     <>
       <PageTitleWrapper>
-        <PageHeader title="Autocomplete" />
+        <PageHeader title="Link" />
       </PageTitleWrapper>
       <Grid
         sx={{ px: 4 }}
@@ -20,8 +21,8 @@ function AutocompletePageContent() {
         spacing={3}
       >
         <Grid item lg={12} md={12} xs={12}>
-          {/* <ComboBox /> */}
-          <Playground />
+          <BasicLink />
+          <UnderlineLink />
         </Grid>
       </Grid>
       <Footer />
@@ -29,4 +30,4 @@ function AutocompletePageContent() {
   );
 }
 
-export default AutocompletePageContent;
+export default LinkPageContent;

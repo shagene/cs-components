@@ -14,7 +14,6 @@ import EventTwoToneIcon from '@mui/icons-material/EventTwoTone';
 import PowerSettingsNewTwoToneIcon from '@mui/icons-material/PowerSettingsNewTwoTone';
 import SmsTwoToneIcon from '@mui/icons-material/SmsTwoTone';
 import Link from 'src/components/Link';
-import { useAuth } from 'src/hooks/useAuth';
 import { useRouter } from 'next/router';
 
 const LightTooltip = styled(({ className, ...props }: TooltipProps) => (
@@ -35,12 +34,10 @@ const LightTooltip = styled(({ className, ...props }: TooltipProps) => (
 function SidebarFooter() {
   const { t }: { t: any } = useTranslation();
   const theme = useTheme();
-  const { logout } = useAuth();
   const router = useRouter();
 
   const handleLogout = async (): Promise<void> => {
     try {
-      await logout();
       router.push('/');
     } catch (err) {
       console.error(err);

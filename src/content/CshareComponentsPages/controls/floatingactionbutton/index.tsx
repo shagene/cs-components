@@ -3,13 +3,15 @@ import PageHeader from 'src/content/CshareHeader/PageHeader';
 import Footer from 'src/components/CshareComponents/Footer';
 import PageTitleWrapper from 'src/components/PageTitleWrapper';
 import React from 'react';
-import Playground from '@/components/CshareComponents/Autocomplete/Playground';
+import BasicFab from '@/components/CshareComponents/Controls/FloatingActionButton/BasicFab';
+import ExtendedFab from '@/components/CshareComponents/Controls/FloatingActionButton/ExtendedFab';
+import SizedFab from '@/components/CshareComponents/Controls/FloatingActionButton/SizedFab';
 
-function AutocompletePageContent() {
+function FabPageContent() {
   return (
     <>
       <PageTitleWrapper>
-        <PageHeader title="Autocomplete" />
+        <PageHeader title="Floating Action Button (FAB)" />
       </PageTitleWrapper>
       <Grid
         sx={{ px: 4 }}
@@ -20,8 +22,9 @@ function AutocompletePageContent() {
         spacing={3}
       >
         <Grid item lg={12} md={12} xs={12}>
-          {/* <ComboBox /> */}
-          <Playground />
+          <BasicFab />
+          <ExtendedFab />
+          <SizedFab />
         </Grid>
       </Grid>
       <Footer />
@@ -29,4 +32,4 @@ function AutocompletePageContent() {
   );
 }
 
-export default AutocompletePageContent;
+export default FabPageContent;

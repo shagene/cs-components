@@ -460,8 +460,8 @@ function ComponentsMenu() {
                 />
               </Link>
             </MenuItem>
-            <MenuItem disabled>
-              <Link href="/cs-components/controls/slider">
+            <MenuItem>
+              <Link href="/cs-components/controls/dropdown">
                 <ListItemText
                   primaryTypographyProps={{
                     variant: 'h5'
@@ -470,8 +470,8 @@ function ComponentsMenu() {
                 />
               </Link>
             </MenuItem>
-            <MenuItem disabled>
-              <Link href="/cs-components/controls/slider">
+            <MenuItem>
+              <Link href="/cs-components/controls/floatingactionbutton">
                 <ListItemText
                   primaryTypographyProps={{
                     variant: 'h5'
@@ -480,8 +480,8 @@ function ComponentsMenu() {
                 />
               </Link>
             </MenuItem>
-            <MenuItem disabled>
-              <Link href="/cs-components/controls/slider">
+            <MenuItem>
+              <Link href="/cs-components/controls/link">
                 <ListItemText
                   primaryTypographyProps={{
                     variant: 'h5'
@@ -490,8 +490,8 @@ function ComponentsMenu() {
                 />
               </Link>
             </MenuItem>
-            <MenuItem disabled>
-              <Link href="/cs-components/controls/slider">
+            <MenuItem>
+              <Link href="/cs-components/controls/paginator">
                 <ListItemText
                   primaryTypographyProps={{
                     variant: 'h5'

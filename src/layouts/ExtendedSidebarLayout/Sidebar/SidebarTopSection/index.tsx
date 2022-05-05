@@ -1,5 +1,4 @@
 import { useRef, useState } from 'react';
-import { useAuth } from 'src/hooks/useAuth';
 
 import {
   Avatar,
@@ -66,8 +65,6 @@ function SidebarTopSection() {
   const theme = useTheme();
   const router = useRouter();
 
-  const { logout } = useAuth();
-
   const user = {
     avatar: '/static/images/avatars/1.jpg',
     name: 'Rachael Simons',
@@ -88,7 +85,6 @@ function SidebarTopSection() {
   const handleLogout = async (): Promise<void> => {
     try {
       handleClose();
-      await logout();
       router.push('/');
     } catch (err) {
       console.error(err);

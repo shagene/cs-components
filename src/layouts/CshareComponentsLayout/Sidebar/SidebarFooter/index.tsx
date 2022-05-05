@@ -10,7 +10,6 @@ import {
 } from '@mui/material';
 import { useTranslation } from 'react-i18next';
 import PowerSettingsNewTwoToneIcon from '@mui/icons-material/PowerSettingsNewTwoTone';
-import { useAuth } from 'src/hooks/useAuth';
 import { useRouter } from 'next/router';
 
 const LightTooltip = styled(({ className, ...props }: TooltipProps) => (
@@ -31,12 +30,10 @@ const LightTooltip = styled(({ className, ...props }: TooltipProps) => (
 function SidebarFooter() {
   const { t }: { t: any } = useTranslation();
   const theme = useTheme();
-  const { logout } = useAuth();
   const router = useRouter();
 
   const handleLogout = async (): Promise<void> => {
     try {
-      await logout();
       router.push('/');
     } catch (err) {
       console.error(err);

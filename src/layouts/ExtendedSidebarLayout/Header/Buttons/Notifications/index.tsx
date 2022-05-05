@@ -38,9 +38,6 @@ import BusinessCenterTwoToneIcon from '@mui/icons-material/BusinessCenterTwoTone
 import AssignmentIndTwoToneIcon from '@mui/icons-material/AssignmentIndTwoTone';
 import CheckTwoToneIcon from '@mui/icons-material/CheckTwoTone';
 
-import { Chart } from 'src/components/Chart';
-import type { ApexOptions } from 'apexcharts';
-
 const BoxComposed = styled(Box)(
   () => `
   position: relative;
@@ -179,81 +176,6 @@ function HeaderNotifications() {
   const handleClose = (): void => {
     setOpen(false);
   };
-
-  const chartOptions: ApexOptions = {
-    chart: {
-      background: 'transparent',
-      toolbar: {
-        show: false
-      },
-      zoom: {
-        enabled: false
-      },
-      sparkline: {
-        enabled: true
-      },
-      stacked: true
-    },
-    dataLabels: {
-      enabled: true
-    },
-    plotOptions: {
-      bar: {
-        borderRadius: 8,
-        horizontal: false,
-        columnWidth: '65%'
-      }
-    },
-    stroke: {
-      show: false,
-      width: 0,
-      colors: ['transparent']
-    },
-    theme: {
-      mode: theme.palette.mode === 'dark' ? 'light' : 'dark'
-    },
-    colors: [theme.colors.secondary.light, theme.colors.secondary.dark],
-    fill: {
-      opacity: 1
-    },
-    labels: [
-      'Monday',
-      'Tuesday',
-      'Wednesday',
-      'Thursday',
-      'Friday',
-      'Saturday',
-      'Sunday',
-      'Last week',
-      'Last month',
-      'Last year',
-      'Last quarter'
-    ],
-    legend: {
-      show: false
-    },
-    tooltip: {
-      fixed: {
-        enabled: true
-      },
-      x: {
-        show: true
-      },
-      marker: {
-        show: true
-      }
-    }
-  };
-  const chartData = [
-    {
-      name: 'Net Profit',
-      data: [2.3, 3.1, 4.0, 3.8, 5.1, 3.6, 4.0, 3.8, 5.1, 3.6, 3.2]
-    },
-    {
-      name: 'Net Loss',
-      data: [2.1, 2.1, 3.0, 2.8, 4.0, 3.8, 5.1, 3.6, 4.1, 2.6, 1.2]
-    }
-  ];
 
   return (
     <>
@@ -694,12 +616,6 @@ function HeaderNotifications() {
                   {t('Total sales performance for last week')}
                 </Typography>
               </Box>
-              <Chart
-                options={chartOptions}
-                series={chartData}
-                type="bar"
-                height={146}
-              />
             </Box>
           </Box>
         )}

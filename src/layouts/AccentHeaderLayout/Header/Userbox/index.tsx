@@ -1,5 +1,4 @@
 import { useRef, useState } from 'react';
-import { useAuth } from 'src/hooks/useAuth';
 import { useRouter } from 'next/router';
 
 import {
@@ -66,8 +65,6 @@ function HeaderUserbox() {
 
   const router = useRouter();
 
-  const { logout } = useAuth();
-
   const ref = useRef<any>(null);
   const [isOpen, setOpen] = useState<boolean>(false);
 
@@ -82,7 +79,6 @@ function HeaderUserbox() {
   const handleLogout = async (): Promise<void> => {
     try {
       handleClose();
-      await logout();
       router.push('/');
     } catch (err) {
       console.error(err);

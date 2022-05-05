@@ -1,5 +1,4 @@
 import { useRef, useState } from 'react';
-import { useAuth } from 'src/hooks/useAuth';
 import { useRouter } from 'next/router';
 
 import {
@@ -101,7 +100,6 @@ const UserBoxLabelMain = styled(Typography)(
 
 function Userbox() {
   const { t }: { t: any } = useTranslation();
-  const { logout } = useAuth();
   const router = useRouter();
 
   const user = {
@@ -124,7 +122,6 @@ function Userbox() {
   const handleLogout = async (): Promise<void> => {
     try {
       handleClose();
-      await logout();
       router.push('/');
     } catch (err) {
       console.error(err);
