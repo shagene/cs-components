@@ -2,14 +2,6 @@ import type { ReactNode } from 'react';
 
 import AnalyticsTwoToneIcon from '@mui/icons-material/AnalyticsTwoTone';
 import HealthAndSafetyTwoToneIcon from '@mui/icons-material/HealthAndSafetyTwoTone';
-import AssignmentIndTwoToneIcon from '@mui/icons-material/AssignmentIndTwoTone';
-import AccountTreeTwoToneIcon from '@mui/icons-material/AccountTreeTwoTone';
-import StorefrontTwoToneIcon from '@mui/icons-material/StorefrontTwoTone';
-import VpnKeyTwoToneIcon from '@mui/icons-material/VpnKeyTwoTone';
-import ErrorTwoToneIcon from '@mui/icons-material/ErrorTwoTone';
-import DesignServicesTwoToneIcon from '@mui/icons-material/DesignServicesTwoTone';
-import SupportTwoToneIcon from '@mui/icons-material/SupportTwoTone';
-import ReceiptTwoToneIcon from '@mui/icons-material/ReceiptTwoTone';
 import BackupTableTwoToneIcon from '@mui/icons-material/BackupTableTwoTone';
 import SmartToyTwoToneIcon from '@mui/icons-material/SmartToyTwoTone';
 
@@ -30,382 +22,203 @@ export interface MenuItems {
 
 const menuItems: MenuItems[] = [
   {
-    heading: 'General',
+    heading: 'Components',
     items: [
       {
-        name: 'Blueprints',
+        name: 'Content Containers',
         icon: BackupTableTwoToneIcon,
         items: [
           {
-            name: 'Extended Sidebar',
-            link: '/dashboards/reports',
-            badge: 'v3.0',
-            badgeTooltip: 'Added in version 3.0'
+            name: 'Accordion',
+            link: '/cs-components/contentcontainer/accordion'
           },
           {
-            name: 'Accent Header',
-            link: '/blueprints/accent-header/dashboards/reports',
-            badge: '',
-            badgeTooltip: 'Updated'
+            name: 'Alert',
+            link: '/cs-components/contentcontainer/alert'
           },
           {
-            name: 'Accent Sidebar',
-            link: '/blueprints/accent-sidebar/dashboards/reports'
+            name: 'Backdrop',
+            link: '/cs-components/contentcontainer/backdrop'
           },
           {
-            name: 'Boxed Sidebar',
-            link: '/blueprints/boxed-sidebar/dashboards/reports'
+            name: 'Banner',
+            link: '/cs-components/contentcontainer/banner'
           },
           {
-            name: 'Collapsed Sidebar',
-            link: '/blueprints/collapsed-sidebar/dashboards/reports'
+            name: 'Card',
+            link: '/cs-components/contentcontainer/card'
           },
           {
-            name: 'Bottom Navigation',
-            link: '/blueprints/bottom-navigation/dashboards/reports'
+            name: 'Carousel',
+            link: '/cs-components/contentcontainer/carousel'
           },
           {
-            name: 'Top Navigation',
-            link: '/blueprints/top-navigation/dashboards/reports'
-          }
+            name: 'Dialog',
+            link: '/cs-components/contentcontainer/dialog'
+          },
+          {
+            name: 'List',
+            link: '/cs-components/contentcontainer/list'
+          },
+          {
+            name: 'Image List',
+            link: '/cs-components/contentcontainer/imagelist'
+          },
+          {
+            name: 'Skeleton Screen',
+            link: '/cs-components/contentcontainer/skeletonscreen'
+          },
+          {
+            name: 'Snackbar',
+            link: '/cs-components/contentcontainer/snackbar'
+          },
+          {
+            name: 'Table',
+            link: '/cs-components/contentcontainer/table'
+          },
+          {
+            name: 'Tooltip',
+            link: '/cs-components/contentcontainer/tooltip'
+          },
         ]
       },
       {
-        name: 'Dashboards',
+        name: 'Content Visualization',
         icon: SmartToyTwoToneIcon,
-        link: '/dashboards',
         items: [
           {
-            name: 'Reports',
-            link: '/dashboards/reports',
-            badge: '',
-            badgeTooltip: 'Reports Dashboard - version 3.0'
+            name: 'Avatar',
+            link: '/cs-components/content-visualization/avatar'
           },
           {
-            name: 'Expenses',
-            link: '/dashboards/expenses',
-            badge: '',
-            badgeTooltip: 'Expenses Dashboard - version 3.0'
+            name: 'Badge',
+            link: '/cs-components/content-visualization/badge'
           },
           {
-            name: 'Products',
-            link: '/dashboards/products',
-            badge: '',
-            badgeTooltip: 'Products Dashboard - version 3.0'
+            name: 'Loading Indicator',
+            link: '/cs-components/content-visualization/loadingindicator'
           },
           {
-            name: 'Statistics',
-            link: '/dashboards/statistics',
-            badge: '',
-            badgeTooltip: 'Statistics Dashboard - version 3.0'
+            name: 'Progress Indicator',
+            link: '/content-visualization/progressindicator'
           },
           {
-            name: 'Automation',
-            link: '/dashboards/automation'
-          },
-          {
-            name: 'Analytics',
-            link: '/dashboards/analytics'
-          },
-          {
-            name: 'Banking',
-            link: '/dashboards/banking'
-          },
-          {
-            name: 'Commerce',
-            link: '/dashboards/commerce'
-          },
-          {
-            name: 'Crypto',
-            link: '/dashboards/crypto'
-          },
-          {
-            name: 'Finance',
-            link: '/dashboards/finance'
-          },
-          {
-            name: 'Fitness',
-            link: '/dashboards/fitness'
-          },
-          {
-            name: 'Healthcare',
-            link: '/dashboards/healthcare',
-            items: [
-              {
-                name: 'Doctors',
-                link: '/dashboards/healthcare/doctor'
-              },
-              {
-                name: 'Hospital',
-                link: '/dashboards/healthcare/hospital'
-              }
-            ]
-          },
-          {
-            name: 'Helpdesk',
-            link: '/dashboards/helpdesk'
-          },
-          {
-            name: 'Learning',
-            link: '/dashboards/learning'
-          },
-          {
-            name: 'Monitoring',
-            link: '/dashboards/monitoring'
-          },
-          {
-            name: 'Tasks',
-            link: '/dashboards/tasks'
+            name: 'Tags',
+            link: '/cs-components/content-visualization/tags'
           }
         ]
       },
       {
-        name: 'Data Display',
+        name: 'Controls',
         icon: HealthAndSafetyTwoToneIcon,
-        badge: '',
-        link: '/blocks',
-        badgeTooltip: 'Tokyo 3.0 contains over 250 new data display blocks',
         items: [
           {
-            name: 'Charts large',
-            link: '/blocks/charts-large'
+            name: 'Button',
+            link: '/cs-components/controls/button'
           },
           {
-            name: 'Charts small',
-            link: '/blocks/charts-small'
+            name: 'Button Group',
+            link: '/cs-components/controls/buttongroup'
           },
           {
-            name: 'Composed cards',
-            link: '/blocks/composed-cards'
+            name: 'Button Toggle',
+            link: '/cs-components/controls/buttontoggle'
           },
           {
-            name: 'Grids',
-            link: '/blocks/grids'
+            name: 'Checkbox',
+            link: '/cs-components/controls/checkbox'
           },
           {
-            name: 'Icon cards',
-            link: '/blocks/icon-cards'
+            name: 'Chip',
+            link: '/cs-components/controls/chip'
           },
           {
-            name: 'Image cards',
-            link: '/blocks/image-cards'
+            name: 'Date Time Picker',
+            link: '/cs-components/controls/datetimepicker'
           },
           {
-            name: 'Lists large',
-            link: '/blocks/lists-large'
+            name: 'Dropdown',
+            link: '/cs-components/controls/dropdown'
           },
           {
-            name: 'Lists small',
-            link: '/blocks/lists-small'
+            name: 'Floating Action Button',
+            link: '/cs-components/controls/floatingactionbutton'
           },
           {
-            name: 'Navigation',
-            link: '/blocks/navigation'
+            name: 'Link',
+            link: '/cs-components/controls/link'
           },
           {
-            name: 'Profile cards',
-            link: '/blocks/profile-cards'
+            name: 'Paginator',
+            link: '/cs-components/controls/paginator'
           },
           {
-            name: 'Progress circular',
-            link: '/blocks/progress-circular'
+            name: 'Radio Button',
+            link: '/cs-components/controls/radiobutton'
           },
           {
-            name: 'Progress horizontal',
-            link: '/blocks/progress-horizontal'
+            name: 'Search',
+            link: '/cs-components/controls/search'
           },
           {
-            name: 'Sparklines large',
-            link: '/blocks/sparklines-large'
+            name: 'Slider',
+            link: '/cs-components/controls/slider'
           },
           {
-            name: 'Sparklines small',
-            link: '/blocks/sparklines-small'
+            name: 'Text Area',
+            link: '/cs-components/controls/textarea'
           },
           {
-            name: 'Statistics',
-            link: '/blocks/statistics'
+            name: 'Text Field',
+            link: '/cs-components/controls/textfield'
+          },
+          {
+            name: 'Toggle / Switch',
+            link: '/cs-components/controls/toggle'
           }
         ]
       },
       {
-        name: 'Applications',
-        link: '/applications',
+        name: 'Navigation Controls',
         icon: AnalyticsTwoToneIcon,
         items: [
           {
-            name: 'Calendar',
-            link: '/applications/calendar'
+            name: 'App Bar',
+            link: '/cs-components/navigation-controls/appbar'
           },
           {
-            name: 'File Manager',
-            link: '/applications/file-manager'
+            name: 'Menus',
+            link: '/cs-components/navigation-controls/menus'
           },
           {
-            name: 'Jobs Platform',
-            link: '/applications/jobs-platform'
+            name: 'Navigation Drawer',
+            link: '/cs-components/navigation-controls/navigationdrawer'
           },
           {
-            name: 'Mailbox',
-            link: '/applications/mailbox'
+            name: 'Navigation Rail',
+            link: '/cs-components/navigation-controls/navigationrail'
           },
           {
-            name: 'Messenger',
-            link: '/applications/messenger'
+            name: 'Section Index',
+            link: '/cs-components/navigation-controls/sectionindex'
           },
           {
-            name: 'Projects Board',
-            link: '/applications/projects-board'
-          }
+            name: 'Tabs',
+            link: '/cs-components/navigation-controls/tabs'
+          },
+          {
+            name: 'Toolbar',
+            link: '/cs-components/navigation-controls/toolbar'
+          },
+          {
+            name: 'Stepper / Wizard',
+            link: '/cs-components/navigation-controls/stepper'
+          },
         ]
       }
     ]
   },
-  {
-    heading: 'Management',
-    items: [
-      {
-        name: 'Users',
-        icon: AssignmentIndTwoToneIcon,
-        link: '/management/users',
-        items: [
-          {
-            name: 'List',
-            link: '/management/users'
-          },
-          {
-            name: 'User Profile',
-            link: '/management/users/single/1'
-          }
-        ]
-      },
-      {
-        name: 'Projects',
-        link: '/management/projects',
-        icon: AccountTreeTwoToneIcon
-      },
-      {
-        name: 'Commerce',
-        icon: StorefrontTwoToneIcon,
-        link: '/management/commerce',
-        items: [
-          {
-            name: 'Shop',
-            link: '/management/commerce/shop'
-          },
-          {
-            name: 'List',
-            link: '/management/commerce/products'
-          },
-          {
-            name: 'Details',
-            link: '/management/commerce/products/single/1'
-          },
-          {
-            name: 'Create',
-            link: '/management/commerce/products/create'
-          }
-        ]
-      },
-      {
-        name: 'Invoices',
-        link: '/management/invoices',
-        icon: ReceiptTwoToneIcon,
-        items: [
-          {
-            name: 'List',
-            link: '/management/invoices'
-          },
-          {
-            name: 'Details',
-            link: '/management/invoices/single/1'
-          }
-        ]
-      }
-    ]
-  },
-  {
-    heading: 'Extra Pages',
-    items: [
-      {
-        name: 'Auth Pages',
-        icon: VpnKeyTwoToneIcon,
-        items: [
-          {
-            name: 'Login',
-            items: [
-              {
-                name: 'Basic',
-                link: '/auth/login/basic?demo=true'
-              },
-              {
-                name: 'Cover',
-                link: '/auth/login/cover?demo=true'
-              }
-            ]
-          },
-          {
-            name: 'Register',
-            items: [
-              {
-                name: 'Basic',
-                link: '/auth/register/basic?demo=true'
-              },
-              {
-                name: 'Cover',
-                link: '/auth/register/cover?demo=true'
-              },
-              {
-                name: 'Wizard',
-                link: '/auth/register/wizard?demo=true'
-              }
-            ]
-          },
-          {
-            name: 'Recover Password',
-            link: '/auth/recover-password?demo=true'
-          }
-        ]
-      },
-      {
-        name: 'Status',
-        icon: ErrorTwoToneIcon,
-        items: [
-          {
-            name: 'Error 404',
-            link: '/status/404'
-          },
-          {
-            name: 'Error 500',
-            link: '/status/500'
-          },
-          {
-            name: 'Maintenance',
-            link: '/status/maintenance'
-          },
-          {
-            name: 'Coming Soon',
-            link: '/status/coming-soon'
-          }
-        ]
-      }
-    ]
-  },
-  {
-    heading: 'Foundation',
-    items: [
-      {
-        name: 'Overview',
-        link: '/',
-        icon: DesignServicesTwoToneIcon
-      },
-      {
-        name: 'Documentation',
-        icon: SupportTwoToneIcon,
-        link: '/docs'
-      }
-    ]
-  }
+  
 ];
 
 export default menuItems;

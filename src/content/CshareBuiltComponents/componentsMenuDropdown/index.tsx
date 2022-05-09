@@ -451,7 +451,7 @@ function ComponentsMenu() {
               </Link>
             </MenuItem>
             <MenuItem>
-              <Link href="/cs-components/controls/slider">
+              <Link href="/cs-components/controls/datetimepicker">
                 <ListItemText
                   primaryTypographyProps={{
                     variant: 'h5'
