@@ -13,7 +13,6 @@ import {
   darken
 } from '@mui/material';
 
-import SidebarTopSection from './SidebarTopSection';
 import SidebarMenu from './SidebarMenu';
 import SidebarFooter from './SidebarFooter';
 import Logo from 'src/components/LogoSign';
@@ -53,7 +52,9 @@ function Sidebar() {
           background:
             theme.palette.mode === 'dark'
               ? alpha(lighten(theme.header.background, 0.1), 0.5)
-              : darken(theme.colors.alpha.trueWhite[100], 0.5),
+              : // : darken(theme.colors.alpha.trueWhite[100], 0.5),
+                darken(theme.colors.primary.main, 0),
+          // darken(theme.colors.alpha.black[100], 0.9),
           boxShadow:
             theme.palette.mode === 'dark' ? theme.sidebar.boxShadow : 'none'
         }}
@@ -108,7 +109,8 @@ function Sidebar() {
             background:
               theme.palette.mode === 'dark'
                 ? theme.colors.alpha.white[100]
-                : darken(theme.colors.alpha.trueWhite[100], 0.5)
+                : // : darken(theme.colors.alpha.trueWhite[100], 0.5)
+                  darken(theme.colors.primary.main, 0)
           }}
         >
           <Scrollbar>

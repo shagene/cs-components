@@ -500,8 +500,8 @@ function ComponentsMenu() {
                 />
               </Link>
             </MenuItem>
-            <MenuItem disabled>
-              <Link href="/cs-components/controls/slider">
+            <MenuItem>
+              <Link href="/cs-components/controls/radiobutton">
                 <ListItemText
                   primaryTypographyProps={{
                     variant: 'h5'
