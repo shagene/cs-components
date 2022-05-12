@@ -16,9 +16,7 @@ function ButtonPage() {
 }
 
 ButtonPage.getLayout = (page) => (
-  //   <Authenticated>
   <CshareComponentsLayout>{page}</CshareComponentsLayout>
-  //   </Authenticated>
 );
 
 export default ButtonPage;

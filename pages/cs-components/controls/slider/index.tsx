@@ -16,9 +16,7 @@ function SlidersPage() {
 }
 
 SlidersPage.getLayout = (page) => (
-  //   <Authenticated>
   <CshareComponentsLayout>{page}</CshareComponentsLayout>
-  //   </Authenticated>
 );
 
 export default SlidersPage;

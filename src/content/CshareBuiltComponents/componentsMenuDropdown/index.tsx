@@ -401,7 +401,7 @@ function ComponentsMenu() {
               Controls
             </Typography>
             <MenuItem selected>
-              <Link href="/cs-components/controls/button">
+              <Link href="/cs-components/controls/button" onClick={handleClose}>
                 <ListItemText
                   primaryTypographyProps={{
                     variant: 'h5'
@@ -411,7 +411,10 @@ function ComponentsMenu() {
               </Link>
             </MenuItem>
             <MenuItem>
-              <Link href="/cs-components/controls/buttongroup">
+              <Link
+                href="/cs-components/controls/buttongroup"
+                onClick={handleClose}
+              >
                 <ListItemText
                   primaryTypographyProps={{
                     variant: 'h5'
@@ -421,7 +424,10 @@ function ComponentsMenu() {
               </Link>
             </MenuItem>
             <MenuItem>
-              <Link href="/cs-components/controls/togglebutton">
+              <Link
+                href="/cs-components/controls/togglebutton"
+                onClick={handleClose}
+              >
                 <ListItemText
                   primaryTypographyProps={{
                     variant: 'h5'
@@ -431,7 +437,10 @@ function ComponentsMenu() {
               </Link>
             </MenuItem>
             <MenuItem>
-              <Link href="/cs-components/controls/checkbox">
+              <Link
+                href="/cs-components/controls/checkbox"
+                onClick={handleClose}
+              >
                 <ListItemText
                   primaryTypographyProps={{
                     variant: 'h5'
@@ -441,7 +450,7 @@ function ComponentsMenu() {
               </Link>
             </MenuItem>
             <MenuItem>
-              <Link href="/cs-components/controls/chip">
+              <Link href="/cs-components/controls/chip" onClick={handleClose}>
                 <ListItemText
                   primaryTypographyProps={{
                     variant: 'h5'
@@ -451,7 +460,10 @@ function ComponentsMenu() {
               </Link>
             </MenuItem>
             <MenuItem>
-              <Link href="/cs-components/controls/datetimepicker">
+              <Link
+                href="/cs-components/controls/datetimepicker"
+                onClick={handleClose}
+              >
                 <ListItemText
                   primaryTypographyProps={{
                     variant: 'h5'
@@ -461,7 +473,10 @@ function ComponentsMenu() {
               </Link>
             </MenuItem>
             <MenuItem>
-              <Link href="/cs-components/controls/dropdown">
+              <Link
+                href="/cs-components/controls/dropdown"
+                onClick={handleClose}
+              >
                 <ListItemText
                   primaryTypographyProps={{
                     variant: 'h5'
@@ -471,7 +486,10 @@ function ComponentsMenu() {
               </Link>
             </MenuItem>
             <MenuItem>
-              <Link href="/cs-components/controls/floatingactionbutton">
+              <Link
+                href="/cs-components/controls/floatingactionbutton"
+                onClick={handleClose}
+              >
                 <ListItemText
                   primaryTypographyProps={{
                     variant: 'h5'
@@ -481,7 +499,7 @@ function ComponentsMenu() {
               </Link>
             </MenuItem>
             <MenuItem>
-              <Link href="/cs-components/controls/link">
+              <Link href="/cs-components/controls/link" onClick={handleClose}>
                 <ListItemText
                   primaryTypographyProps={{
                     variant: 'h5'
@@ -491,7 +509,10 @@ function ComponentsMenu() {
               </Link>
             </MenuItem>
             <MenuItem>
-              <Link href="/cs-components/controls/paginator">
+              <Link
+                href="/cs-components/controls/paginator"
+                onClick={handleClose}
+              >
                 <ListItemText
                   primaryTypographyProps={{
                     variant: 'h5'
@@ -501,7 +522,10 @@ function ComponentsMenu() {
               </Link>
             </MenuItem>
             <MenuItem>
-              <Link href="/cs-components/controls/radiobutton">
+              <Link
+                href="/cs-components/controls/radiobutton"
+                onClick={handleClose}
+              >
                 <ListItemText
                   primaryTypographyProps={{
                     variant: 'h5'
@@ -510,8 +534,8 @@ function ComponentsMenu() {
                 />
               </Link>
             </MenuItem>
-            <MenuItem disabled>
-              <Link href="/cs-components/controls/slider">
+            <MenuItem>
+              <Link href="/cs-components/controls/search" onClick={handleClose}>
                 <ListItemText
                   primaryTypographyProps={{
                     variant: 'h5'
@@ -519,9 +543,10 @@ function ComponentsMenu() {
                   primary={t('Search')}
                 />
               </Link>
+              (To Do)
             </MenuItem>
             <MenuItem>
-              <Link href="/cs-components/controls/slider">
+              <Link href="/cs-components/controls/slider" onClick={handleClose}>
                 <ListItemText
                   primaryTypographyProps={{
                     variant: 'h5'
@@ -530,8 +555,11 @@ function ComponentsMenu() {
                 />
               </Link>
             </MenuItem>
-            <MenuItem disabled>
-              <Link href="/cs-components/controls/slider">
+            <MenuItem>
+              <Link
+                href="/cs-components/controls/textarea"
+                onClick={handleClose}
+              >
                 <ListItemText
                   primaryTypographyProps={{
                     variant: 'h5'
@@ -539,9 +567,13 @@ function ComponentsMenu() {
                   primary={t('Text Area')}
                 />
               </Link>
+              (To Do)
             </MenuItem>
-            <MenuItem disabled>
-              <Link href="/cs-components/controls/slider">
+            <MenuItem>
+              <Link
+                href="/cs-components/controls/textfield"
+                onClick={handleClose}
+              >
                 <ListItemText
                   primaryTypographyProps={{
                     variant: 'h5'
@@ -549,9 +581,10 @@ function ComponentsMenu() {
                   primary={t('Text Field')}
                 />
               </Link>
+              (To Do)
             </MenuItem>
-            <MenuItem disabled>
-              <Link href="/cs-components/controls/slider">
+            <MenuItem>
+              <Link href="/cs-components/controls/toggle" onClick={handleClose}>
                 <ListItemText
                   primaryTypographyProps={{
                     variant: 'h5'
@@ -559,6 +592,7 @@ function ComponentsMenu() {
                   primary={t('Toggle / Switch')}
                 />
               </Link>
+              (To Do)
             </MenuItem>
           </MenuListWrapperError>
           <MenuListWrapperError disablePadding>
