@@ -599,8 +599,11 @@ function ComponentsMenu() {
             <Typography variant="h5" textAlign={'start'} sx={{ pb: 2 }}>
               Navigation Controls
             </Typography>
-            <MenuItem disabled>
-              <Link href="/cs-components/controls/button">
+            <MenuItem>
+              <Link
+                href="/cs-components/navigation-controls/appbar"
+                onClick={handleClose}
+              >
                 <ListItemText
                   primaryTypographyProps={{
                     variant: 'h5'
@@ -609,8 +612,11 @@ function ComponentsMenu() {
                 />
               </Link>
             </MenuItem>
-            <MenuItem disabled>
-              <Link href="/cs-components/controls/slider">
+            <MenuItem>
+              <Link
+                href="/cs-components/navigation-controls/menu"
+                onClick={handleClose}
+              >
                 <ListItemText
                   primaryTypographyProps={{
                     variant: 'h5'
@@ -619,8 +625,11 @@ function ComponentsMenu() {
                 />
               </Link>
             </MenuItem>
-            <MenuItem disabled>
-              <Link href="/cs-components/controls/button">
+            <MenuItem>
+              <Link
+                href="/cs-components/navigation-controls/navigationdrawer"
+                onClick={handleClose}
+              >
                 <ListItemText
                   primaryTypographyProps={{
                     variant: 'h5'
@@ -629,8 +638,11 @@ function ComponentsMenu() {
                 />
               </Link>
             </MenuItem>
-            <MenuItem disabled>
-              <Link href="/cs-components/controls/slider">
+            <MenuItem>
+              <Link
+                href="/cs-components/navigation-controls/navigationrail"
+                onClick={handleClose}
+              >
                 <ListItemText
                   primaryTypographyProps={{
                     variant: 'h5'
@@ -639,8 +651,11 @@ function ComponentsMenu() {
                 />
               </Link>
             </MenuItem>
-            <MenuItem disabled>
-              <Link href="/cs-components/controls/slider">
+            <MenuItem>
+              <Link
+                href="/cs-components/navigation-controls/sectionindex"
+                onClick={handleClose}
+              >
                 <ListItemText
                   primaryTypographyProps={{
                     variant: 'h5'
@@ -649,8 +664,11 @@ function ComponentsMenu() {
                 />
               </Link>
             </MenuItem>
-            <MenuItem disabled>
-              <Link href="/cs-components/controls/slider">
+            <MenuItem>
+              <Link
+                href="/cs-components/navigation-controls/tabs"
+                onClick={handleClose}
+              >
                 <ListItemText
                   primaryTypographyProps={{
                     variant: 'h5'
@@ -659,8 +677,8 @@ function ComponentsMenu() {
                 />
               </Link>
             </MenuItem>
-            <MenuItem disabled>
-              <Link href="/cs-components/controls/slider">
+            <MenuItem>
+              <Link href="/cs-components/toolbar onClick={handleClose}">
                 <ListItemText
                   primaryTypographyProps={{
                     variant: 'h5'
@@ -669,8 +687,11 @@ function ComponentsMenu() {
                 />
               </Link>
             </MenuItem>
-            <MenuItem disabled>
-              <Link href="/cs-components/controls/slider">
+            <MenuItem>
+              <Link
+                href="/cs-components/navigation-controls/stepper"
+                onClick={handleClose}
+              >
                 <ListItemText
                   primaryTypographyProps={{
                     variant: 'h5'
