@@ -219,6 +219,7 @@ function ComponentsMenu() {
                   primary={t('Accordion')}
                 />
               </Link>
+              (To Do)
             </MenuItem>
             <MenuItem disabled>
               <Link href="/cs-components/controls/slider">
@@ -229,6 +230,7 @@ function ComponentsMenu() {
                   primary={t('Alert')}
                 />
               </Link>
+              (To Do)
             </MenuItem>
             <MenuItem disabled>
               <Link href="/cs-components/controls/button">
@@ -239,6 +241,7 @@ function ComponentsMenu() {
                   primary={t('Backdrop')}
                 />
               </Link>
+              (To Do)
             </MenuItem>
             <MenuItem disabled>
               <Link href="/cs-components/controls/slider">
@@ -249,6 +252,7 @@ function ComponentsMenu() {
                   primary={t('Banner')}
                 />
               </Link>
+              (To Do)
             </MenuItem>
             <MenuItem disabled>
               <Link href="/cs-components/controls/slider">
@@ -259,6 +263,7 @@ function ComponentsMenu() {
                   primary={t('Card')}
                 />
               </Link>
+              (To Do)
             </MenuItem>
             <MenuItem disabled>
               <Link href="/cs-components/controls/slider">
@@ -269,6 +274,7 @@ function ComponentsMenu() {
                   primary={t('Carousel')}
                 />
               </Link>
+              (To Do)
             </MenuItem>
             <MenuItem disabled>
               <Link href="/cs-components/controls/slider">
@@ -279,6 +285,7 @@ function ComponentsMenu() {
                   primary={t('Dialog')}
                 />
               </Link>
+              (To Do)
             </MenuItem>
             <MenuItem disabled>
               <Link href="/cs-components/controls/slider">
@@ -289,6 +296,7 @@ function ComponentsMenu() {
                   primary={t('List')}
                 />
               </Link>
+              (To Do)
             </MenuItem>
             <MenuItem disabled>
               <Link href="/cs-components/controls/slider">
@@ -299,6 +307,7 @@ function ComponentsMenu() {
                   primary={t('Image List')}
                 />
               </Link>
+              (To Do)
             </MenuItem>
             <MenuItem disabled>
               <Link href="/cs-components/controls/slider">
@@ -309,6 +318,7 @@ function ComponentsMenu() {
                   primary={t('Skeleton Screen')}
                 />
               </Link>
+              (To Do)
             </MenuItem>
             <MenuItem disabled>
               <Link href="/cs-components/controls/slider">
@@ -319,6 +329,7 @@ function ComponentsMenu() {
                   primary={t('Snackbar')}
                 />
               </Link>
+              (To Do)
             </MenuItem>
             <MenuItem disabled>
               <Link href="/cs-components/controls/slider">
@@ -329,6 +340,7 @@ function ComponentsMenu() {
                   primary={t('Table')}
                 />
               </Link>
+              (To Do)
             </MenuItem>
             <MenuItem disabled>
               <Link href="/cs-components/controls/slider">
@@ -339,6 +351,7 @@ function ComponentsMenu() {
                   primary={t('Tooltip')}
                 />
               </Link>
+              (To Do)
             </MenuItem>
           </MenuListWrapperSecondary>
           <MenuListWrapperSuccess disablePadding>
@@ -354,6 +367,7 @@ function ComponentsMenu() {
                   primary={t('Avatars')}
                 />
               </Link>
+              (To Do)
             </MenuItem>
             <MenuItem disabled>
               <Link href="/cs-components/controls/slider">
@@ -364,6 +378,7 @@ function ComponentsMenu() {
                   primary={t('Badges')}
                 />
               </Link>
+              (To Do)
             </MenuItem>
             <MenuItem disabled>
               <Link href="/cs-components/controls/button">
@@ -374,6 +389,7 @@ function ComponentsMenu() {
                   primary={t('Loading Indicators')}
                 />
               </Link>
+              (To Do)
             </MenuItem>
             <MenuItem disabled>
               <Link href="/cs-components/controls/slider">
@@ -384,6 +400,7 @@ function ComponentsMenu() {
                   primary={t('Progress Indicators')}
                 />
               </Link>
+              (To Do)
             </MenuItem>
             <MenuItem disabled>
               <Link href="/cs-components/controls/slider">
@@ -394,6 +411,7 @@ function ComponentsMenu() {
                   primary={t('Tags')}
                 />
               </Link>
+              (To Do)
             </MenuItem>
           </MenuListWrapperSuccess>
           <MenuListWrapperError disablePadding>
@@ -650,6 +668,7 @@ function ComponentsMenu() {
                   primary={t('Navigation Rail')}
                 />
               </Link>
+              (To Do)
             </MenuItem>
             <MenuItem>
               <Link
@@ -663,6 +682,7 @@ function ComponentsMenu() {
                   primary={t('Section Index')}
                 />
               </Link>
+              (To Do)
             </MenuItem>
             <MenuItem>
               <Link
@@ -676,6 +696,7 @@ function ComponentsMenu() {
                   primary={t('Tabs')}
                 />
               </Link>
+              (To Do)
             </MenuItem>
             <MenuItem>
               <Link href="/cs-components/toolbar onClick={handleClose}">
@@ -686,6 +707,7 @@ function ComponentsMenu() {
                   primary={t('Toolbar')}
                 />
               </Link>
+              (To Do)
             </MenuItem>
             <MenuItem>
               <Link
@@ -699,6 +721,7 @@ function ComponentsMenu() {
                   primary={t('Stepper / Wizard')}
                 />
               </Link>
+              (To Do)
             </MenuItem>
           </MenuListWrapperError>
         </Stack>

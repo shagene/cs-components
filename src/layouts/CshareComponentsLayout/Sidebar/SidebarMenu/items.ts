@@ -25,7 +25,7 @@ const menuItems: MenuItems[] = [
     heading: 'Components',
     items: [
       {
-        name: 'Content Containers',
+        name: 'Content Containers ',
         icon: BackupTableTwoToneIcon,
         items: [
           {
