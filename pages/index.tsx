@@ -3,24 +3,13 @@ import {
   Box,
   Card,
   Container,
-  Popover,
-  Button,
   styled,
   useTheme,
-  CardActionArea,
-  Typography,
-  MenuList,
-  Grid,
-  Divider,
-  MenuItem,
-  ListItemText,
-  alpha,
-  Stack
+  MenuList
 } from '@mui/material';
 import type { ReactElement } from 'react';
 import BaseLayout from 'src/layouts/BaseLayout';
 
-import Link from 'src/components/Link';
 import Head from 'next/head';
 import { useTranslation } from 'react-i18next';
 import Logo from 'src/components/LogoSign';
@@ -28,7 +17,7 @@ import Hero from 'src/content/Overview/Hero';
 import LanguageSwitcher from 'src/layouts/BoxedSidebarLayout/Header/Buttons/LanguageSwitcher';
 import Footer from 'src/components/CshareComponents/Footer';
 import ThemeSettings from '@/components/ThemeSettings';
-import KeyboardArrowDownTwoToneIcon from '@mui/icons-material/KeyboardArrowDownTwoTone';
+
 import ComponentsMenu from '@/content/CshareBuiltComponents/componentsMenuDropdown';
 
 const HeaderWrapper = styled(Card)(
@@ -167,6 +156,7 @@ function Overview() {
         </Container>
       </HeaderWrapper>
       <Hero />
+      {/* <ScrollToTop /> */}
       <ThemeSettings />
       <Footer />
     </OverviewWrapper>
