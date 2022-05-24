@@ -13,32 +13,37 @@ export default function SectionIndex() {
     <Box sx={{ pb: 5, justifyContent: 'center', textAlign: 'center' }}>
       <div
         style={{
-          display: 'flex',
-          alignContent: 'center',
-          justifyContent: 'center'
+          alignContent: 'start',
+          justifyContent: 'start',
+          display: 'grid'
         }}
         id="back-to-top-anchor"
       >
         <Typography variant="h3" component="h2" sx={{ p: 2 }}>
-          <AnchorLink offset="100" href="#index1">
-            Index 1
-          </AnchorLink>
+          Indexes
         </Typography>
-        <Typography variant="h3" component="h2" sx={{ p: 2 }}>
-          <AnchorLink offset="100" href="#index2">
-            Index 2
-          </AnchorLink>
-        </Typography>
-        <Typography variant="h3" component="h2" sx={{ p: 2 }}>
-          <AnchorLink offset="100" href="#index3">
-            Index 3
-          </AnchorLink>
-        </Typography>
-        <Typography variant="h3" component="h2" sx={{ p: 2 }}>
-          <AnchorLink offset="100" href="#index4">
-            Index 4
-          </AnchorLink>
-        </Typography>
+        <div style={{ borderLeft: '3px solid grey', marginLeft: '30px' }}>
+          <Typography variant="h4" component="h3" sx={{ p: 2 }}>
+            <AnchorLink offset="100" href="#index1">
+              Index 1
+            </AnchorLink>
+          </Typography>
+          <Typography variant="h4" component="h3" sx={{ p: 2 }}>
+            <AnchorLink offset="100" href="#index2">
+              Index 2
+            </AnchorLink>
+          </Typography>
+          <Typography variant="h4" component="h3" sx={{ p: 2 }}>
+            <AnchorLink offset="100" href="#index3">
+              Index 3
+            </AnchorLink>
+          </Typography>
+          <Typography variant="h4" component="h3" sx={{ p: 2 }}>
+            <AnchorLink offset="100" href="#index4">
+              Index 4
+            </AnchorLink>
+          </Typography>
+        </div>
       </div>
       <Stack
         direction="column"
