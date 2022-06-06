@@ -682,7 +682,7 @@ function ComponentsMenu() {
                   primary={t('Section Index')}
                 />
               </Link>
-              (To Do)
+              (In Progress)
             </MenuItem>
             <MenuItem>
               <Link
@@ -696,7 +696,6 @@ function ComponentsMenu() {
                   primary={t('Tabs')}
                 />
               </Link>
-              (To Do)
             </MenuItem>
             <MenuItem>
               <Link href="/cs-components/toolbar onClick={handleClose}">
