@@ -358,8 +358,8 @@ function ComponentsMenu() {
             <Typography variant="h5" textAlign={'start'} sx={{ pb: 2 }}>
               Content Visualization
             </Typography>
-            <MenuItem disabled>
-              <Link href="/cs-components/controls/button">
+            <MenuItem>
+              <Link href="/cs-components/content-visualization/avatar">
                 <ListItemText
                   primaryTypographyProps={{
                     variant: 'h5'
@@ -367,10 +367,9 @@ function ComponentsMenu() {
                   primary={t('Avatars')}
                 />
               </Link>
-              (To Do)
             </MenuItem>
-            <MenuItem disabled>
-              <Link href="/cs-components/controls/slider">
+            <MenuItem>
+              <Link href="/cs-components/content-visualization/badge">
                 <ListItemText
                   primaryTypographyProps={{
                     variant: 'h5'
@@ -378,18 +377,16 @@ function ComponentsMenu() {
                   primary={t('Badges')}
                 />
               </Link>
-              (To Do)
             </MenuItem>
-            <MenuItem disabled>
-              <Link href="/cs-components/controls/button">
+            <MenuItem>
+              <Link href="/cs-components/content-visualization/loading-progress-indicator">
                 <ListItemText
                   primaryTypographyProps={{
                     variant: 'h5'
                   }}
-                  primary={t('Loading Indicators')}
+                  primary={t('Loading / Progress Indicators')}
                 />
               </Link>
-              (To Do)
             </MenuItem>
             <MenuItem disabled>
               <Link href="/cs-components/controls/slider">
@@ -720,7 +717,6 @@ function ComponentsMenu() {
                   primary={t('Stepper / Wizard')}
                 />
               </Link>
-              (To Do)
             </MenuItem>
           </MenuListWrapperError>
         </Stack>

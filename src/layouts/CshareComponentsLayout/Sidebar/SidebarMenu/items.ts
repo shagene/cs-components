@@ -95,12 +95,12 @@ const menuItems: MenuItems[] = [
             link: '/cs-components/content-visualization/badge'
           },
           {
-            name: 'Loading Indicator',
-            link: '/cs-components/content-visualization/loadingindicator'
+            name: 'Loading / Progress Indicator',
+            link: '/cs-components/content-visualization/loading-progress-indicator'
           },
           {
             name: 'Progress Indicator',
-            link: '/content-visualization/progressindicator'
+            link: '/content-visualization/loading-progress-indicator'
           },
           {
             name: 'Tags',
@@ -157,7 +157,7 @@ const menuItems: MenuItems[] = [
             link: '/cs-components/controls/radiobutton'
           },
           {
-            name: 'Search',
+            name: 'Search  (To Do)',
             link: '/cs-components/controls/search'
           },
           {
@@ -165,15 +165,15 @@ const menuItems: MenuItems[] = [
             link: '/cs-components/controls/slider'
           },
           {
-            name: 'Text Area',
+            name: 'Text Area  (To Do)',
             link: '/cs-components/controls/textarea'
           },
           {
-            name: 'Text Field',
+            name: 'Text Fiel  (To Do)d',
             link: '/cs-components/controls/textfield'
           },
           {
-            name: 'Toggle / Switch',
+            name: 'Toggle / Switch  (To Do)',
             link: '/cs-components/controls/toggle'
           }
         ]
@@ -195,11 +195,11 @@ const menuItems: MenuItems[] = [
             link: '/cs-components/navigation-controls/navigationdrawer'
           },
           {
-            name: 'Navigation Rail',
+            name: 'Navigation Rail  (To Do)',
             link: '/cs-components/navigation-controls/navigationrail'
           },
           {
-            name: 'Section Index',
+            name: 'Section Index  (In Progress)',
             link: '/cs-components/navigation-controls/sectionindex'
           },
           {
@@ -207,7 +207,7 @@ const menuItems: MenuItems[] = [
             link: '/cs-components/navigation-controls/tabs'
           },
           {
-            name: 'Toolbar',
+            name: 'Toolbar (To Do)',
             link: '/cs-components/navigation-controls/toolbar'
           },
           {
