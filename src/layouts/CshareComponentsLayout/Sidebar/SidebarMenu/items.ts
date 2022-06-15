@@ -98,14 +98,6 @@ const menuItems: MenuItems[] = [
             name: 'Loading / Progress Indicator',
             link: '/cs-components/content-visualization/loading-progress-indicator'
           },
-          {
-            name: 'Progress Indicator',
-            link: '/content-visualization/loading-progress-indicator'
-          },
-          {
-            name: 'Tags',
-            link: '/cs-components/content-visualization/tags'
-          }
         ]
       },
       {

@@ -388,28 +388,6 @@ function ComponentsMenu() {
                 />
               </Link>
             </MenuItem>
-            <MenuItem disabled>
-              <Link href="/cs-components/controls/slider">
-                <ListItemText
-                  primaryTypographyProps={{
-                    variant: 'h5'
-                  }}
-                  primary={t('Progress Indicators')}
-                />
-              </Link>
-              (To Do)
-            </MenuItem>
-            <MenuItem disabled>
-              <Link href="/cs-components/controls/slider">
-                <ListItemText
-                  primaryTypographyProps={{
-                    variant: 'h5'
-                  }}
-                  primary={t('Tags')}
-                />
-              </Link>
-              (To Do)
-            </MenuItem>
           </MenuListWrapperSuccess>
           <MenuListWrapperError disablePadding>
             <Typography variant="h5" textAlign={'start'} sx={{ pb: 2 }}>
