@@ -210,8 +210,8 @@ function ComponentsMenu() {
             <Typography variant="h5" textAlign={'start'} sx={{ pb: 2 }}>
               Content Containers
             </Typography>
-            <MenuItem disabled>
-              <Link href="/cs-components/controls/button">
+            <MenuItem>
+              <Link href="/cs-components/content-containers/accordion">
                 <ListItemText
                   primaryTypographyProps={{
                     variant: 'h5'
@@ -219,10 +219,9 @@ function ComponentsMenu() {
                   primary={t('Accordion')}
                 />
               </Link>
-              (To Do)
             </MenuItem>
-            <MenuItem disabled>
-              <Link href="/cs-components/controls/slider">
+            <MenuItem>
+              <Link href="/cs-components/content-containers/alert">
                 <ListItemText
                   primaryTypographyProps={{
                     variant: 'h5'
@@ -230,10 +229,9 @@ function ComponentsMenu() {
                   primary={t('Alert')}
                 />
               </Link>
-              (To Do)
             </MenuItem>
-            <MenuItem disabled>
-              <Link href="/cs-components/controls/button">
+            <MenuItem>
+              <Link href="/cs-components/content-containers/backdrop">
                 <ListItemText
                   primaryTypographyProps={{
                     variant: 'h5'
@@ -243,8 +241,8 @@ function ComponentsMenu() {
               </Link>
               (To Do)
             </MenuItem>
-            <MenuItem disabled>
-              <Link href="/cs-components/controls/slider">
+            <MenuItem>
+              <Link href="/cs-components/content-containers/banner">
                 <ListItemText
                   primaryTypographyProps={{
                     variant: 'h5'
@@ -254,8 +252,8 @@ function ComponentsMenu() {
               </Link>
               (To Do)
             </MenuItem>
-            <MenuItem disabled>
-              <Link href="/cs-components/controls/slider">
+            <MenuItem>
+              <Link href="/cs-components/content-containers/card">
                 <ListItemText
                   primaryTypographyProps={{
                     variant: 'h5'
@@ -265,8 +263,8 @@ function ComponentsMenu() {
               </Link>
               (To Do)
             </MenuItem>
-            <MenuItem disabled>
-              <Link href="/cs-components/controls/slider">
+            <MenuItem>
+              <Link href="/cs-components/content-containers/carousel">
                 <ListItemText
                   primaryTypographyProps={{
                     variant: 'h5'
@@ -276,8 +274,8 @@ function ComponentsMenu() {
               </Link>
               (To Do)
             </MenuItem>
-            <MenuItem disabled>
-              <Link href="/cs-components/controls/slider">
+            <MenuItem>
+              <Link href="/cs-components/content-containers/dialog">
                 <ListItemText
                   primaryTypographyProps={{
                     variant: 'h5'
@@ -287,8 +285,8 @@ function ComponentsMenu() {
               </Link>
               (To Do)
             </MenuItem>
-            <MenuItem disabled>
-              <Link href="/cs-components/controls/slider">
+            <MenuItem>
+              <Link href="/cs-components/content-containers/list">
                 <ListItemText
                   primaryTypographyProps={{
                     variant: 'h5'
@@ -298,8 +296,8 @@ function ComponentsMenu() {
               </Link>
               (To Do)
             </MenuItem>
-            <MenuItem disabled>
-              <Link href="/cs-components/controls/slider">
+            <MenuItem>
+              <Link href="/cs-components/content-containers/image-list">
                 <ListItemText
                   primaryTypographyProps={{
                     variant: 'h5'
@@ -309,8 +307,8 @@ function ComponentsMenu() {
               </Link>
               (To Do)
             </MenuItem>
-            <MenuItem disabled>
-              <Link href="/cs-components/controls/slider">
+            <MenuItem>
+              <Link href="/cs-components/content-containers/skeleton-screen">
                 <ListItemText
                   primaryTypographyProps={{
                     variant: 'h5'
@@ -320,8 +318,8 @@ function ComponentsMenu() {
               </Link>
               (To Do)
             </MenuItem>
-            <MenuItem disabled>
-              <Link href="/cs-components/controls/slider">
+            <MenuItem>
+              <Link href="/cs-components/content-containers/snackbar">
                 <ListItemText
                   primaryTypographyProps={{
                     variant: 'h5'
@@ -331,8 +329,8 @@ function ComponentsMenu() {
               </Link>
               (To Do)
             </MenuItem>
-            <MenuItem disabled>
-              <Link href="/cs-components/controls/slider">
+            <MenuItem>
+              <Link href="/cs-components/content-containers/table">
                 <ListItemText
                   primaryTypographyProps={{
                     variant: 'h5'
@@ -342,8 +340,8 @@ function ComponentsMenu() {
               </Link>
               (To Do)
             </MenuItem>
-            <MenuItem disabled>
-              <Link href="/cs-components/controls/slider">
+            <MenuItem>
+              <Link href="/cs-components/content-containers/tooltip">
                 <ListItemText
                   primaryTypographyProps={{
                     variant: 'h5'

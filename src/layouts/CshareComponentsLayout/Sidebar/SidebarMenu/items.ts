@@ -30,55 +30,55 @@ const menuItems: MenuItems[] = [
         items: [
           {
             name: 'Accordion',
-            link: '/cs-components/contentcontainer/accordion'
+            link: '/cs-components/content-containers/accordion'
           },
           {
             name: 'Alert',
-            link: '/cs-components/contentcontainer/alert'
+            link: '/cs-components/content-containers/alert'
           },
           {
             name: 'Backdrop',
-            link: '/cs-components/contentcontainer/backdrop'
+            link: '/cs-components/content-containers/backdrop'
           },
           {
             name: 'Banner',
-            link: '/cs-components/contentcontainer/banner'
+            link: '/cs-components/content-containers/banner'
           },
           {
             name: 'Card',
-            link: '/cs-components/contentcontainer/card'
+            link: '/cs-components/content-containers/card'
           },
           {
             name: 'Carousel',
-            link: '/cs-components/contentcontainer/carousel'
+            link: '/cs-components/content-containers/carousel'
           },
           {
             name: 'Dialog',
-            link: '/cs-components/contentcontainer/dialog'
+            link: '/cs-components/content-containers/dialog'
           },
           {
             name: 'List',
-            link: '/cs-components/contentcontainer/list'
+            link: '/cs-components/content-containers/list'
           },
           {
             name: 'Image List',
-            link: '/cs-components/contentcontainer/imagelist'
+            link: '/cs-components/content-containers/image-list'
           },
           {
             name: 'Skeleton Screen',
-            link: '/cs-components/contentcontainer/skeletonscreen'
+            link: '/cs-components/content-containers/skeleton-screen'
           },
           {
             name: 'Snackbar',
-            link: '/cs-components/contentcontainer/snackbar'
+            link: '/cs-components/content-containers/snackbar'
           },
           {
             name: 'Table',
-            link: '/cs-components/contentcontainer/table'
+            link: '/cs-components/content-containers/table'
           },
           {
             name: 'Tooltip',
-            link: '/cs-components/contentcontainer/tooltip'
+            link: '/cs-components/content-containers/tooltip'
           },
         ]
       },
