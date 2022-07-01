@@ -2,6 +2,9 @@ import { Grid } from '@mui/material';
 import PageHeader from 'src/content/CshareHeader/PageHeader';
 import Footer from 'src/components/CshareComponents/Footer';
 import PageTitleWrapper from 'src/components/PageTitleWrapper';
+import BasicList from '@/components/CshareComponents/Content-Containers/List/BasicList';
+import NestedList from '@/components/CshareComponents/Content-Containers/List/NestedList';
+import SelectedListItem from '@/components/CshareComponents/Content-Containers/List/SelectedListItem';
 
 function ListPageContent() {
   return (
@@ -18,7 +21,9 @@ function ListPageContent() {
         spacing={3}
       >
         <Grid item lg={12} md={12} xs={12}>
-          List
+          <BasicList />
+          <NestedList />
+          <SelectedListItem />
         </Grid>
       </Grid>
       <Footer />

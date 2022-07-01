@@ -2,6 +2,8 @@ import { Grid } from '@mui/material';
 import PageHeader from 'src/content/CshareHeader/PageHeader';
 import Footer from 'src/components/CshareComponents/Footer';
 import PageTitleWrapper from 'src/components/PageTitleWrapper';
+import * as React from 'react';
+import Banner from '@/components/CshareComponents/Content-Containers/Banner/Banner';
 
 function BannerPageContent() {
   return (
@@ -18,7 +20,8 @@ function BannerPageContent() {
         spacing={3}
       >
         <Grid item lg={12} md={12} xs={12}>
-          Banner
+          <Banner />
+          <Banner />
         </Grid>
       </Grid>
       <Footer />

@@ -2,6 +2,10 @@ import { Grid } from '@mui/material';
 import PageHeader from 'src/content/CshareHeader/PageHeader';
 import Footer from 'src/components/CshareComponents/Footer';
 import PageTitleWrapper from 'src/components/PageTitleWrapper';
+import BasicDialog from '@/components/CshareComponents/Content-Containers/Dialog/BasicDialog';
+import AlertDialog from '@/components/CshareComponents/Content-Containers/Dialog/AlertDialog';
+import FormDialog from '@/components/CshareComponents/Content-Containers/Dialog/FormDialog';
+import FullScreenDialog from '@/components/CshareComponents/Content-Containers/Dialog/FullScreenDialog';
 
 function DialogPageContent() {
   return (
@@ -18,7 +22,10 @@ function DialogPageContent() {
         spacing={3}
       >
         <Grid item lg={12} md={12} xs={12}>
-          Dialog
+          <BasicDialog />
+          <AlertDialog />
+          <FormDialog />
+          <FullScreenDialog />
         </Grid>
       </Grid>
       <Footer />

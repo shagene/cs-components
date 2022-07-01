@@ -239,7 +239,6 @@ function ComponentsMenu() {
                   primary={t('Backdrop')}
                 />
               </Link>
-              (To Do)
             </MenuItem>
             <MenuItem>
               <Link href="/cs-components/content-containers/banner">
@@ -250,7 +249,6 @@ function ComponentsMenu() {
                   primary={t('Banner')}
                 />
               </Link>
-              (To Do)
             </MenuItem>
             <MenuItem>
               <Link href="/cs-components/content-containers/card">
@@ -261,7 +259,6 @@ function ComponentsMenu() {
                   primary={t('Card')}
                 />
               </Link>
-              (To Do)
             </MenuItem>
             <MenuItem>
               <Link href="/cs-components/content-containers/carousel">
@@ -272,7 +269,7 @@ function ComponentsMenu() {
                   primary={t('Carousel')}
                 />
               </Link>
-              (To Do)
+              (In Progress)
             </MenuItem>
             <MenuItem>
               <Link href="/cs-components/content-containers/dialog">
@@ -283,7 +280,6 @@ function ComponentsMenu() {
                   primary={t('Dialog')}
                 />
               </Link>
-              (To Do)
             </MenuItem>
             <MenuItem>
               <Link href="/cs-components/content-containers/list">
@@ -294,7 +290,6 @@ function ComponentsMenu() {
                   primary={t('List')}
                 />
               </Link>
-              (To Do)
             </MenuItem>
             <MenuItem>
               <Link href="/cs-components/content-containers/image-list">
