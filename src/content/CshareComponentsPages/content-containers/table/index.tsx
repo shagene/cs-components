@@ -2,6 +2,9 @@ import { Grid } from '@mui/material';
 import PageHeader from 'src/content/CshareHeader/PageHeader';
 import Footer from 'src/components/CshareComponents/Footer';
 import PageTitleWrapper from 'src/components/PageTitleWrapper';
+import BasicTable from '@/components/CshareComponents/Content-Containers/Table/BasicTable';
+import DataTable from '@/components/CshareComponents/Content-Containers/Table/DataTable';
+import SortingSelectingTable from '@/components/CshareComponents/Content-Containers/Table/SortingSelectingTable';
 
 function TablePageContent() {
   return (
@@ -18,7 +21,9 @@ function TablePageContent() {
         spacing={3}
       >
         <Grid item lg={12} md={12} xs={12}>
-          table
+          <BasicTable />
+          <DataTable />
+          <SortingSelectingTable />
         </Grid>
       </Grid>
       <Footer />

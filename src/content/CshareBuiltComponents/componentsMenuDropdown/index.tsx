@@ -300,7 +300,6 @@ function ComponentsMenu() {
                   primary={t('Image List')}
                 />
               </Link>
-              (To Do)
             </MenuItem>
             <MenuItem>
               <Link href="/cs-components/content-containers/skeleton-screen">
@@ -311,7 +310,6 @@ function ComponentsMenu() {
                   primary={t('Skeleton Screen')}
                 />
               </Link>
-              (To Do)
             </MenuItem>
             <MenuItem>
               <Link href="/cs-components/content-containers/snackbar">
@@ -322,7 +320,7 @@ function ComponentsMenu() {
                   primary={t('Snackbar')}
                 />
               </Link>
-              (To Do)
+              (In Progress)
             </MenuItem>
             <MenuItem>
               <Link href="/cs-components/content-containers/table">

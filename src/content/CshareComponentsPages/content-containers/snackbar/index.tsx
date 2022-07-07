@@ -2,6 +2,8 @@ import { Grid } from '@mui/material';
 import PageHeader from 'src/content/CshareHeader/PageHeader';
 import Footer from 'src/components/CshareComponents/Footer';
 import PageTitleWrapper from 'src/components/PageTitleWrapper';
+import SimpleSnackbar from '@/components/CshareComponents/Content-Containers/Snackbar/SimpleSnackbar';
+import PositionedSnackbar from '@/components/CshareComponents/Content-Containers/Snackbar/PositionedSnackbar';
 
 function SnackbarPageContent() {
   return (
@@ -18,7 +20,8 @@ function SnackbarPageContent() {
         spacing={3}
       >
         <Grid item lg={12} md={12} xs={12}>
-          Snackbar
+          <SimpleSnackbar />
+          <PositionedSnackbar />
         </Grid>
       </Grid>
       <Footer />
